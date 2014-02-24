@@ -10,9 +10,9 @@ tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
 Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 4. W sumie nie wiem od czego zacząć: od RSpec? Unit Testing?
 5. Na wprowadzenie/powtórkę z Ruby trzeba będzie zaadoptować
-to [Learn X in Y minutes][5]. Podobne „starter code”
-powinny też być do RSpec (kilka, np. przykład *hello world*,
-*RSpec::Expectations*, *RSpec::Mocks**, …).
+to [Learn X in Y minutes][5]. Podobne „starter code”
+powinny też być do RSpec (kilka,
+np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 
 
 
