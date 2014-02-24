@@ -6,12 +6,12 @@
 2. Teraz musimy napisać program w punktach oraz dodać,
 maksimum 4–6 pozycji, literatury.
 3. [NSS Software Development Fundamentals - Spring 2013][1] –
-tutaj jest rozpiska na zajęcia w poszczegółnych tygodniach zajęć.
+tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
 Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 4. W sumie nie wiem od czego zacząć: od RSpec? Unit Testing?
-5. Na wprowadzenie/powtórkę z Ruby trzba będzie przygotować
-coś takiego [Learn X in Y minutes][5]. Takie „starter code”
-powinny być też do RSpec (kilka, przykład *hello world*,
+5. Na wprowadzenie/powtórkę z Ruby trzeba będzie zaadoptować
+to [Learn X in Y minutes][5]. Podobne „starter code”
+powinny też być do RSpec (kilka, np. przykład *hello world*,
 *RSpec::Expectations*, *RSpec::Mocks**, …).
 
 
