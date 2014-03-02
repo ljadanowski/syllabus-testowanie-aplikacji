@@ -24,7 +24,7 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 3. Wprowadzenie do Rspec.
 4. Testy jednostkowe.
 5. Testy integracyjne.
-6. Obiekty mock i stuby.
+6. Obiekty mock i stub.
 
 
 ### Laboratorium (45 godz.)
