@@ -1,5 +1,6 @@
 ## Testowanie aplikacji...
 
+<!--
 **Luźne uwagi:**
 
 1. Potrzebny jest krótki tytuł. Ten powyżej jest niekompletny.
@@ -13,7 +14,7 @@ Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 to [Learn X in Y minutes][5]. Podobne „starter code”
 powinny też być do RSpec (kilka,
 np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
-
+-->
 
 
 ### Wykład (15 godz.)
