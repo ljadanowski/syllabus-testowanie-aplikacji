@@ -43,9 +43,9 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 1. David Chelimsky, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, Dan North.
 [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends][3].
 2. [Ruby Tutorial][4] (lub jakieś inne lepsze wprowadzenie).
-3. http://rubykoans.com/ - Learn Ruby WITH THE NEO RUBY KOANS
-4. http://betterspecs.org/ - Better Specs
-5. Doc:
+3. http://rubykoans.com/ – Learn Ruby WITH THE NEO RUBY KOANS
+4. http://betterspecs.org/ – Better Specs
+5. Dokumentacja:
   - https://www.relishapp.com/rspec/rspec-core/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
