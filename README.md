@@ -29,13 +29,13 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 
 ### Laboratorium (45 godz.)
 
-1. Przygotowanie środowiska do pracy z językiem Ruby: Git, [RVM][2].
-Integracja z usługami na GitHub: Travis, Code Climate, Coveralls).
-2. Wprowadzenie do języka Ruby: proste skrypty.
+1. Przygotowanie środowiska do pracy z językiem Ruby: Git, [RVM][2],
+  integracja z usługami na GitHub – Travis, Code Climate, Coveralls).
+2. Proste skrypty w języku Ruby.
 3. Dopisywanie brakującego kodu do nieprzechodzących testów.
 4. Dopisywanie testów do niepokrytego nimi kodu.
-5. TDD w praktyce, prosty kawałek kodu do napisania w TDD (*Test Driven Development*).
-6. Własny projekt do napisania w TDD.
+5. TDD w przykładach (*Test Driven Development*).
+6. Własny projekt do napisania z wykorzystaniem TDD.
 
 
 ### Literatura
