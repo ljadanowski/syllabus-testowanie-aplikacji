@@ -45,7 +45,7 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 2. [Ruby Tutorial][4] (lub jakieś inne lepsze wprowadzenie).
 3. http://rubykoans.com/ – Learn Ruby WITH THE NEO RUBY KOANS
 4. http://betterspecs.org/ – Better Specs
-5. Dokumentacja:
+5. Dokumentacja RSpec:
   - https://www.relishapp.com/rspec/rspec-core/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
