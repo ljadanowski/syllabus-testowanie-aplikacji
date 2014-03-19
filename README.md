@@ -20,8 +20,8 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 ### Wykład (15 godz.)
 
 1. Powtórka z języka Ruby.
-2. Ogólnie o testowaniu, dostępne narzędzia i technologie (MiniTest, Rspec, Capybara, Factory Girl).
-3. Wprowadzenie do Rspec.
+2. Ogólnie o testowaniu, dostępne narzędzia i technologie (MiniTest, RSpec, Capybara, Factory Girl).
+3. Wprowadzenie do RSpec.
 4. Testy jednostkowe.
 5. Testy integracyjne.
 6. Obiekty mock i stub.
