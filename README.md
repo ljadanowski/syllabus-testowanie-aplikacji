@@ -50,6 +50,8 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
   - https://www.relishapp.com/rspec/rspec-core/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
+4. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
+   Code School
 
 Język Ruby:
 
