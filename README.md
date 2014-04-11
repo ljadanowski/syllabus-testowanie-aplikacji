@@ -28,6 +28,8 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 6. Obiekty mock i stub.
 
 
+![refactoring](images/refactoring.jpg)
+
 ### Laboratorium (45 godz.)
 
 1. Przygotowanie środowiska do pracy z językiem Ruby: Git, [RVM][2],
@@ -43,6 +45,10 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 Testing Puzzles:
 
 * [Puzzle Node](http://www.puzzlenode.com/)
+
+Refactoring:
+
+* [Refactoring Notes](http://ghendry.net/refactor.html)
 
 
 ### Literatura
