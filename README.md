@@ -61,6 +61,8 @@ Język Ruby:
 
 1. [Ruby Tutorial][4].
 2. [Ruby Koans](http://rubykoans.com/) – Learn Ruby with the Neo Ruby Koans.
+3. Jay Fields, Shane Harvie, Martin Fowler with Kent Beck.
+   [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
 
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
