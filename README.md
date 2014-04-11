@@ -56,12 +56,10 @@ Refactoring:
 1. David Chelimsky, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, Dan North.
    [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends][3].
 2. [Better Specs](http://betterspecs.org/).
-3. Dokumentacja RSpec:
-  - https://www.relishapp.com/rspec/rspec-core/v/3-0/docs
-  - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
-  - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
-4. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
-   Code School
+3. Dokumentacja [RSpec](http://rspec.info/):
+  - [rspec-core](https://github.com/rspec/rspec-core)
+  - [rspec-expectations](https://github.com/rspec/rspec-expectations)
+  - [rspec-mocks](https://github.com/rspec/rspec-mocks)
 
 Język Ruby:
 
@@ -69,6 +67,11 @@ Język Ruby:
 2. [Ruby Koans](http://rubykoans.com/) – Learn Ruby with the Neo Ruby Koans.
 3. Jay Fields, Shane Harvie, Martin Fowler with Kent Beck.
    [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
+
+Testowanie aplikacji:
+
+1. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
+  Code School
 
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
