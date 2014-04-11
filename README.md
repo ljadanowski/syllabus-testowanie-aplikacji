@@ -18,7 +18,7 @@ np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
 
 ### Wykład (15 godz.)
 
-1. Powtórka z języka Ruby
+1. Powtórka z języka Ruby.
 
 
 ### Laboratorium (45 godz.)
