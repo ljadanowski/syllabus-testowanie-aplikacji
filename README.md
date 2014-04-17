@@ -60,6 +60,8 @@ Refactoring:
   - [rspec-core](https://github.com/rspec/rspec-core)
   - [rspec-expectations](https://github.com/rspec/rspec-expectations)
   - [rspec-mocks](https://github.com/rspec/rspec-mocks)
+4. Michael Feathers.
+   [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)
 
 Język Ruby:
 
