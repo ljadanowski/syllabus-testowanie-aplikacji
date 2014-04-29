@@ -75,6 +75,11 @@ Testowanie aplikacji:
 1. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
   Code School.
 
+Różne rzeczy:
+
+* Arne Brasseur.
+  [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
+
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 [2]: http://rvm.io/rvm
