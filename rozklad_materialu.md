@@ -24,7 +24,7 @@
    - Znaczenie testów.
    - Refaktoryzacja kodu.
      - Na czym polega refaktoryzacja kodu?
-     - Co to jest *bad smells in code* (w literaturze spotyka się określenie *smoked code*)?
+     - Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
      - Co to jest samotestujący się kod?
    - Pokrycie kodu testami.
 
