@@ -22,7 +22,7 @@
      - Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
      - Co to jest samotestujący się kod?
    - Pokrycie kodu testami.
-4. Obiekty *doubles* (*mock*, *stub*).
+4. Obiekty *doubles* (*mocks*, *stubs*).
    - *Fake Objects*.
    - Do czego używamy doubles?
    - Główne zasady stosowania doubles.
