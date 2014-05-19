@@ -60,6 +60,8 @@ Refactoring:
   - [rspec-core](https://github.com/rspec/rspec-core)
   - [rspec-expectations](https://github.com/rspec/rspec-expectations)
   - [rspec-mocks](https://github.com/rspec/rspec-mocks)
+4. Michael Feathers.
+   [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
 
 Język Ruby:
 
@@ -71,7 +73,12 @@ Język Ruby:
 Testowanie aplikacji:
 
 1. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
-  Code School
+  Code School.
+
+Różne rzeczy:
+
+* Arne Brasseur.
+  [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
 
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
