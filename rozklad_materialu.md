@@ -42,7 +42,8 @@
 1. Praca z *Legacy Code*
 
    - Praca z ,,zastanym kodem''
-   - 
+   - Refaktoryzacja
+   - Identyfikacja miejsca 
 
 poposas
 ### Laboratoria
