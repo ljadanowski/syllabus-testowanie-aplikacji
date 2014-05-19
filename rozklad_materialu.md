@@ -18,34 +18,35 @@
    - Wprowadzenie do *RSpec* – korzystamy z gemów
      *Capybara* i *Factory Girl*.
 
-1. Testy jednostkowe, integracyjne, ...
+1. Testy jednostkowe, integracyjne.
 
-   - Różnice testów
-   - Znaczenie testów jednostkowych, integracyjnych, ...
-   - Przykłady
-   - Pokrycie kodu testami.
+   - Różnice między testami.
+   - Znaczenie testów.
+   - Przykłady.
+   - Pokrycie kodu.
 
 1. Obiekty *mock* i *stub*.
 
-   - Fake Objects
-   - Double (stub, mocks)
-   - Do czego używamy, jak?
-   - Główne zasady stosowania mocków (granice)
-   - Problemy, nadużycia, ograniczenia
+   - *Fake Objects*.
+   - *Doubles* (stub, mocks).
+   - Do czego używamy doubles?
+   - Główne zasady stosowania doubles (granice)
+   - Problemy, nadużycia, ograniczenia.
 
 1. Refaktoryzacja kodu.
 
    - Na czym polega refaktoryzacja kodu
-   - Co to jest *bad smells in code*? (w literaturze spotyka się określenie *smoked code*) 
+   - Co to jest *bad smells in code* (w literaturze spotyka się określenie *smoked code*)?
    - Co to jest samotestujący się kod?
 
-1. Praca z *Legacy Code*
+1. Praca z *Legacy Code*, czyli
+   z już istniejącym kodem lub kodem nie pokrytym testami (Michael Feathers).
 
-   - Praca z ,,zastanym kodem''
-   - Pokrycie testami
-   - Refaktoryzacja
+   - Praca z „zastanym kodem”.
+   - Pokrycie testami.
+   - Refaktoryzacja Legacy Code.
 
-poposas
+
 ### Laboratoria
 
 1\. (3 godz.)
@@ -64,11 +65,11 @@ poposas
   Dopisywanie testów do niepokrytego nimi kodu.
 
 1\. (9 godz.)
-  Wprowadzenie do *Agile programming*.
+  *Agile Programming*.
 
   - Test first / Test Last
+  - Zalety i wady.
   - TDD (*Test Driven Development*) w przykładach.
-  - Zalety, wady
 
 1\. (12 godz.)
   Własny projekt do napisania z wykorzystaniem TDD lub dowolny
@@ -76,4 +77,4 @@ poposas
   właściela projektu.
 
 1\. (3 godz.)
-  Prezentacje najelpszych projektów.
+  Prezentacje najlepszych projektów.
