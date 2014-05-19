@@ -42,26 +42,26 @@
   - Instalacja Git, RVM.
   - Integracja z usługami na GitHub – Travis, Code Climate, Coveralls.
 
-1\. (6 godz.)
+2\. (6 godz.)
   Tworzenie prostych skryptów w języku Ruby.
 
-1\. (6 godz.)
+3\. (6 godz.)
   Dopisywanie brakującego kodu do nieprzechodzących testów.
 
-1\. (6 godz.)
+4\. (6 godz.)
   Dopisywanie testów do niepokrytego nimi kodu.
 
-1\. (9 godz.)
+5\. (9 godz.)
   *Agile Programming*.
 
   - Test first / Test Last
   - Zalety i wady.
   - TDD (*Test Driven Development*) w przykładach.
 
-1\. (12 godz.)
+6\. (12 godz.)
   Własny projekt do napisania z wykorzystaniem TDD lub dowolny
   projekt z GitHub do którego dopisano testy (i kod) zaakceptowane przez
   właściela projektu.
 
-1\. (3 godz.)
+7\. (3 godz.)
   Prezentacje najlepszych projektów.
