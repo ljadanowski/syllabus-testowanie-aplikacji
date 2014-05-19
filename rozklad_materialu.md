@@ -11,21 +11,24 @@
    - Piszemy proste skrypty.
    - Przegląd metod klas *Array* i *Hash*.
 
-1. Ogólnie o testowaniu, dostępne narzędzia i technologie.
+2. Ogólnie o testowaniu, dostępne narzędzia i technologie.
 
    - Instalacja potrzebnych narzędzi:
      Ruby Version Manager (RVM), edytor (Atom/Emacs/Vim).
    - Wprowadzenie do *RSpec* – korzystamy z gemów
      *Capybara* i *Factory Girl*.
 
-1. Testy jednostkowe, integracyjne.
+3. Testy jednostkowe, integracyjne.
 
    - Różnice między testami.
    - Znaczenie testów.
-   - Przykłady.
-   - Pokrycie kodu.
+   - Refaktoryzacja kodu:
+     - Na czym polega refaktoryzacja kodu
+      - Co to jest *bad smells in code* (w literaturze spotyka się określenie *smoked code*)?
+      - Co to jest samotestujący się kod?
+   - Pokrycie kodu testami.
 
-1. Obiekty *mock* i *stub*.
+4. Obiekty *mock* i *stub*.
 
    - *Fake Objects*.
    - *Doubles* (stub, mocks).
@@ -33,13 +36,7 @@
    - Główne zasady stosowania doubles (granice)
    - Problemy, nadużycia, ograniczenia.
 
-1. Refaktoryzacja kodu.
-
-   - Na czym polega refaktoryzacja kodu
-   - Co to jest *bad smells in code* (w literaturze spotyka się określenie *smoked code*)?
-   - Co to jest samotestujący się kod?
-
-1. Praca z *Legacy Code*, czyli
+5. Praca z *Legacy Code*, czyli
    z już istniejącym kodem lub kodem nie pokrytym testami (Michael Feathers).
 
    - Praca z „zastanym kodem”.
