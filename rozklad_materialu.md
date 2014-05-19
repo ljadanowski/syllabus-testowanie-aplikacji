@@ -42,8 +42,8 @@
 1. Praca z *Legacy Code*
 
    - Praca z ,,zastanym kodem''
+   - Pokrycie testami
    - Refaktoryzacja
-   - Identyfikacja miejsca 
 
 poposas
 ### Laboratoria
@@ -66,8 +66,9 @@ poposas
 1\. (9 godz.)
   Wprowadzenie do *Agile programming*.
 
+  - Test first / Test Last
   - TDD (*Test Driven Development*) w przykładach.
-  - ... coś jeszcze?
+  - Zalety, wady
 
 1\. (12 godz.)
   Własny projekt do napisania z wykorzystaniem TDD lub dowolny
