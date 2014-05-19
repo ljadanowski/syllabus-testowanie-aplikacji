@@ -18,27 +18,33 @@
    - Wprowadzenie do *RSpec* – korzystamy z gemów
      *Capybara* i *Factory Girl*.
 
-1. Testy jednostkowe i testy integracyjne.
+1. Testy jednostkowe, integracyjne, ...
 
-   - ...
+   - Różnice testów
+   - Znaczenie testów jednostkowych, integracyjnych, ...
+   - Przykłady
    - Pokrycie kodu testami.
 
 1. Obiekty *mock* i *stub*.
 
-   - ...
+   - Fake Objects
+   - Double (stub, mocks)
+   - Do czego używamy, jak?
+   - Główne zasady stosowania mocków (granice)
+   - Problemy, nadużycia, ograniczenia
 
 1. Refaktoryzacja kodu.
 
    - Na czym polega refaktoryzacja kodu
-   - Co to jest *bad smells in code*?
+   - Co to jest *bad smells in code*? (w literaturze spotyka się określenie *smoked code*) 
    - Co to jest samotestujący się kod?
 
 1. Praca z *Legacy Code*
 
-   - ...
+   - Praca z ,,zastanym kodem''
+   - 
 
-
-
+poposas
 ### Laboratoria
 
 1\. (3 godz.)
