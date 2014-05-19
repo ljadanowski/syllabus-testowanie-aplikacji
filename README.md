@@ -1,4 +1,4 @@
-## Testowanie oprogramowania napisanego w języku Ruby
+## Ruby – testowanie aplikacji
 
 <!--
 **Luźne uwagi:**
