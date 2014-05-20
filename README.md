@@ -3,28 +3,32 @@
 <!--
 **Luźne uwagi:**
 
-3. [NSS Software Development Fundamentals - Spring 2013][1] –
+1. [NSS Software Development Fundamentals - Spring 2013][1] –
 tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
 Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 
-5. Na wprowadzenie/powtórkę z Ruby trzeba będzie zaadoptować
-to [Learn X in Y minutes][5]. Podobne „starter code”
-powinny też być do RSpec (kilka,
-np. przykład *hello world*, *RSpec::Expectations*, *RSpec::Mocks*, …).
+2. Pomysł na wprowadzenie/powtórkę – [Learn X in Y minutes][5].
+Podobne „starter code” można przygotować (np. w laboratorium+github)
+dla RSpec, Doubles, …
 -->
 
 
 ### Wykład (15 godz.)
 
 1. Powtórka z języka Ruby.
-   - [Learn X in Y minutes][5].
-
+   - [Learn X in Y minutes][5], where X=Ruby.
+   - [Learn X in Ruby], where X=Array,Hash (laboratorium, git)
 2. Ogólnie o testowaniu, dostępne narzędzia i technologie:<br>
-  MiniTest, RSpec, Capybara, Factory Girl.
+   - Edytor i Testowanie
+   - [Learn X in Y minutes], where X=Rspec,Capybara,Factory Girl
 3. Wprowadzenie do RSpec.
 4. Testy jednostkowe.
 5. Testy integracyjne.
-6. Obiekty mock i stub.
+6. Refaktoryzacja kodu.
+7. Pokrycie kodu testami.
+   - [simplecov][8]
+8. Doubles, mocks i stubs.
+9. Praca z *Legacy Code* (zastanym kodem, kodem niepokrytym testami).
 
 
 ![refactoring](images/refactoring.jpg)
@@ -87,3 +91,4 @@ Różne rzeczy:
 [5]: http://learnxinyminutes.com/docs/ruby/
 [6]: http://tryruby.org/levels/1/challenges/0
 [7]: https://www.codeschool.com/courses/testing-with-rspec
+[8]: https://github.com/colszowka/simplecov
