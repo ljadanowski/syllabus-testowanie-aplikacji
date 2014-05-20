@@ -61,7 +61,7 @@
 6\. (12 godz.)
   Własny projekt do napisania z wykorzystaniem TDD lub dowolny
   projekt z GitHub do którego dopisano testy (i kod) zaakceptowane przez
-  właściela projektu.
+  właściciela projektu.
 
 7\. (3 godz.)
   Prezentacje najlepszych projektów.
