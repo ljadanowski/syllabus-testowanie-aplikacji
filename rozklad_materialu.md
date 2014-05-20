@@ -7,8 +7,8 @@
 
 1. Wprowadzenie do języka Ruby.
    - Podstawowe elementy języka: pętle, funkcje.
-   - Piszemy proste skrypty.
    - Przegląd metod klas *Array* i *Hash*.
+   - Piszemy proste skrypty.
 2. Ogólnie o testowaniu, dostępne narzędzia i technologie.
    - Instalacja potrzebnych narzędzi:
      Ruby Version Manager (RVM), edytor (Atom/Emacs/Vim).
