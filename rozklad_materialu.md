@@ -5,8 +5,8 @@
 
 ### Wykłady
 
-1. Powtórka z języka Ruby.
-   - Wprowadzenie.
+1. Wprowadzenie do języka Ruby.
+   - Podstawowe elementy języka: pętle, funkcje.
    - Piszemy proste skrypty.
    - Przegląd metod klas *Array* i *Hash*.
 2. Ogólnie o testowaniu, dostępne narzędzia i technologie.
