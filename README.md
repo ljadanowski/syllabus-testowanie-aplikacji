@@ -72,6 +72,7 @@ Język Ruby:
 2. [Ruby Koans](http://rubykoans.com/) – Learn Ruby with the Neo Ruby Koans.
 3. Jay Fields, Shane Harvie, Martin Fowler with Kent Beck.
    [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
+4. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide
 
 Testowanie aplikacji:
 
