@@ -5,10 +5,10 @@
 
 ### Wykłady
 
-1. Powtórka z języka Ruby.
-   - Wprowadzenie.
-   - Piszemy proste skrypty.
+1. Wprowadzenie do języka Ruby.
+   - Podstawowe elementy języka: pętle, funkcje.
    - Przegląd metod klas *Array* i *Hash*.
+   - Piszemy proste skrypty.
 2. Ogólnie o testowaniu, dostępne narzędzia i technologie.
    - Instalacja potrzebnych narzędzi:
      Ruby Version Manager (RVM), edytor (Atom/Emacs/Vim).
@@ -61,7 +61,7 @@
 6\. (12 godz.)
   Własny projekt do napisania z wykorzystaniem TDD lub dowolny
   projekt z GitHub do którego dopisano testy (i kod) zaakceptowane przez
-  właściela projektu.
+  właściciela projektu.
 
 7\. (3 godz.)
   Prezentacje najlepszych projektów.
