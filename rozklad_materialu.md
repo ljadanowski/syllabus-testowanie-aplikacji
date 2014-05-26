@@ -1,4 +1,5 @@
-## Rozkład materiału: Ruby – testowanie aplikacji
+### Rozkład materiału przedmiotu
+## Ruby – testowanie skryptów i bibliotek
 
 * wykłady – 5*3 godz.
 * laboratoria – 15*3h.
