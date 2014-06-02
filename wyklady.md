@@ -79,8 +79,8 @@ Więcej informacji:
 * M. Marohnić. Ruby verbose mode and how it's broken.
   http://mislav.uniqpath.com/2011/06/ruby-verbose-mode/
 * Bozhidar Batsov. Ruby Style Guide: https://github.com/bbatsov/ruby-style-guide
-* integracja statycznego analizatora kodu rubocop: https://github.com/bbatsov/rubocop
-  z edytorami (Atom, Emacs)
+* Integracja statycznego analizatora kodu rubocop: https://github.com/bbatsov/rubocop
+  z edytorami (Atom, Emacs).
 
 <!-- IPython + Ruby: https://github.com/minad/iruby -->
 
