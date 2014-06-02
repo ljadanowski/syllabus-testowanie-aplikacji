@@ -222,7 +222,6 @@ Sortowanie:
 - Formatowanie Time i Date.        wyklady/2/40-hello_time.rb
 - Parsowanie Time i Date.          wyklady/2/50-hello_time.rb
 - Arytmetyka i porównywanie Time.  wyklady/2/60-hello_time.rb
-- Formatowanie: http://www.tutorialspoint.com/ruby/ruby_date_time.htm
 
 Dokumentacja (Ruby StdLib):
 - http://www.ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/Date.html
