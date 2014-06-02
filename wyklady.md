@@ -10,6 +10,7 @@
 2\. Podstawowe klasy i moduły.
 
 - Przegląd metod klas *Array* i *Hash*.
+– Klasy *Date* i *Time*.
 
 3\. Ogólnie o testowaniu, dostępne narzędzia i technologie.
 
