@@ -315,6 +315,8 @@ TODO: 5–6 slajdów
 
 #### TODO: Wykład 6. Obiekty *doubles*
 
+Zwane też *mockami* lub *stubami*.
+
 1\. Prawo Demeter –
 zasada minimalnej wiedzy lub Reguła ograniczania interakcji.
 („rozmawiaj tylko z (bliskimi) przyjaciółmi”)
