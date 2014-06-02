@@ -387,6 +387,7 @@ bibliotek, eksperymentowania…
 
 Doubles – co to jest? TODO: wyjaśnić
 
+- Co to są *Fake Objects.*?
 - Główne zasady stosowania doubles.
 - Problemy, nadużycia, ograniczenia.
 
