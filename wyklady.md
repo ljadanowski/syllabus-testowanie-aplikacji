@@ -20,7 +20,7 @@ Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 2\. Podstawowe klasy i moduły.
 
 - Przegląd metod klas *Array* i *Hash*.
-- Klasy *Date* i *Time*.
+- Klasy *Date*, *Time* i *DateTime*.
 
 3\. Ogólnie o testowaniu, dostępne narzędzia i technologie.
 
@@ -167,7 +167,7 @@ Więcej informacji:
 - http://ozmm.org/posts/argf.html
 
 
-#### TODO: Wykład 2. Podstawowe klasy.
+#### TODO: Wykład 2. Podstawowe klasy i moduły
 
 1\. Klasa *Array*
 
