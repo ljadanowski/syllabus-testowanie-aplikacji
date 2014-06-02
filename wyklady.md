@@ -259,7 +259,7 @@ Testy jednostkowe – co to jest?
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
 
-TODO: 2–3 przykłady
+TODO: kod – 2–3 przykłady testów, tak aby było widać izolację.
 
 2\. Po co piszemy testy jednostkowe
 
