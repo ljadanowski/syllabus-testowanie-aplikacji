@@ -7,7 +7,7 @@
 
 1\. Wprowadzenie do języka Ruby.
 
-2\. Podstawowe klasy.
+2\. Podstawowe klasy i moduły.
 
 - Przegląd metod klas *Array* i *Hash*.
 
