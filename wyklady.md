@@ -149,7 +149,7 @@ doc.css('h3.r a').each do |link|
 end
 ```
 
-8\. Skrypty: `ARGV`, `ARGF`, *optparse*
+8\. Skrypty: zmienne `ARGV`, `ARGF`, biblioteka *optparse*
 
 - argumenty wywołania programu: commands, options
 
