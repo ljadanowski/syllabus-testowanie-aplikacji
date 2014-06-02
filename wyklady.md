@@ -7,12 +7,9 @@
 
 1\. Wprowadzenie do języka Ruby.
 
-- Podstawowe elementy języka: pętle, funkcje, klasy, moduły
-- Przykładowe skrypty.
+2\. Podstawowe klasy.
 
-2\. Podstawowe klasy. Przegląd metod klas *Array* i *Hash*.
-
-- Przykładowe skryptów.
+- Przegląd metod klas *Array* i *Hash*.
 
 3\. Ogólnie o testowaniu, dostępne narzędzia i technologie.
 
@@ -57,3 +54,44 @@ tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
 Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
+
+
+### Slajdy
+
+#### Wykład 1. Wprowadzenie do języka Ruby.
+
+1. Skrypt *hello world*.
+
+Bash:
+```sh
+export RUBYOPT=-w # turn on verbose mode
+```
+
+Skrypt *hello_world.rb*:
+```ruby
+#!/bin/env ruby
+puts "hello world"
+```
+Więcej informacji:
+* M. Marohnić. Ruby verbose mode and how it's broken.
+  http://mislav.uniqpath.com/2011/06/ruby-verbose-mode/
+
+2. Podstawowe elementy języka: pętle
+
+3. Podstawowe elementy języka: funkcje
+
+4. Podstawowe elementy języka: klasy
+
+5. Podstawowe elementy języka: moduły.
+
+6. Korzystamy z Gemów.
+
+7. Przykładowe skrypty.
+
+
+
+#### Wykład 2. Podstawowe klasy.
+
+1\. Przegląd metod klas *Array* i *Hash*.
+
+2\. Przykładowe skrypty.
