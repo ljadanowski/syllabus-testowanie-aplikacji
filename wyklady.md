@@ -139,7 +139,7 @@ Zalety modułów:
 #!/bin/env ruby
 require 'bundler/setup'
 
-require 'nokogiri' # require your gems as usual
+require 'nokogiri'  # http://nokogiri.org/
 require 'open-uri'
 
 doc = Nokogiri::HTML(open('http://www.google.com/search?q=rspec'))
