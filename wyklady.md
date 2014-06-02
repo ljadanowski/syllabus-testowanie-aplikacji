@@ -73,7 +73,7 @@ Skrypt *hello_world.rb*:
 puts "hello world"
 ```
 
-Gemy – cot to jest?
+Gemy – co to jest?
 
 Więcej informacji:
 * M. Marohnić. Ruby verbose mode and how it's broken.
