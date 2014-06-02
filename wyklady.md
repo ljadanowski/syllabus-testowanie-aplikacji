@@ -169,21 +169,190 @@ Więcej informacji:
 
 #### TODO: Wykład 2. Podstawowe klasy.
 
-1\. Przegląd metod klas Array i Hash.
+1\. Klasa *Array*
 
-2\. Klasy Date i Time
+Dokumentacja (Ruby Core):
+- http://www.ruby-doc.org/core-2.1.2/Array.html
+
+Składnia:
+
+- `a = [4, 8, 2]; b = -10...0, 0..10]; c = [[1,2], [3,4]]`
+- `words = %w{ala ma kota}`
+
+Indeksowanie:
+
+- `d = ('a'..'e').to_a`
+- `d[-2,2]; d[0..2]; d[0...-1]`
+
+2\. Klasa *Hash*
+
+Dokumentacja (Ruby Core):
+- http://www.ruby-doc.org/core-2.1.2/Hash.html
+
+Składnia (Ruby 2.0.0+):
+
+- `liczby = {one: 1, two: 2, three: 3}`
+- `liczby[:one]`
+- `liczby2 = {"one" => 1, "two" => 2, "three" => 3}`
+- `liczby2["one"]`
+
+3\. Moduł *Enumerable*
+
+Dokumentacja (Ruby Core):
+- http://www.ruby-doc.org/core-2.1.2/Enumerable.html
+
+Pętle:
+
+- `(2..4).each { |x| print x }`
+- `(2..4).each_with_index { |x,i| print x,i }`
+- `(1..10).each_slice(4) { |x| priny x }`
+
+Sortowanie:
+
+- `w = %w{wiśnia gruszka czereśnia}`
+- `w.sort`
+- `w.sort { |a,b| b<=>a }`
+- `w.sort { |a,b| a.size<=>b.size }`
+
+4\. Klasy *Date*, *Time* i *DateTime*
+
+- Tworzenie obiektu Time.          wyklady/2/10-hello_time.rb
+- Co się składa na czas?           wyklady/2/20-hello_time.rb
+- Strefy czasowe.                  wyklady/2/30-hello_time.rb
+- Formatowanie Time i Date.        wyklady/2/40-hello_time.rb
+- Parsowanie Time i Date.          wyklady/2/50-hello_time.rb
+- Arytmetyka i porównywanie Time.  wyklady/2/60-hello_time.rb
+- Formatowanie: http://www.tutorialspoint.com/ruby/ruby_date_time.htm
+
+Dokumentacja (Ruby StdLib):
+- http://www.ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/Date.html
+- http://www.ruby-doc.org/stdlib-2.1.2/libdoc/time/rdoc/Time.html
+- http://www.ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/DateTime.html
 
 
 #### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
 #### TODO: Wykład 4. Testy jednostkowe, integracyjne
 
+1\. Testy jednostkowe
+
+Zautomatyzowany test pisany przez programistę
+testujący pojedyńczy element systemu w izolacji.
+
+2\. Po co piszemy testy jednostkowe
+
+* Natychmiastowy feedback.
+* Wyraźna lokalizacja błędu
+* Lepszy kod.
+
+3\. Automatyzacja z pomocą RSpec, Guard
+
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+  gem 'guard'
+  gem 'guard-rspec'
+end
+```
+
+Bash:
+```sh
+bundle install
+```
+
+4\. Piszemy Kod: top-down czy bottom-up?
+
+Testowanie: test-first czy test-last?
+
+Mantra Test Driven Development (TDD):
+
+    Red -> Green -> Refactor
+
+* Red – napisz test, który nie przechodzi
+* Green – dopisz kod, tak aby test przeszedł
+* Refactor – wyeliminuj nadmiarowy/zbędny kod
+
+W trakcie pisania kodu nasze zrozumienie problemu
+i co traktować jako „unit” ewoluują.
+
+Kiedy zmieniamy kod, musimy zmienić też testy.
+
+5\. Izolacja
+
+Jak osiągamy izolację:
+
+* Dzielimy kod na pliki
+* Korzystamy z baz danych, gemów…
+
+6\. Jak testowany jest kod Ruby Core i Std-lib.
+
+Ruby Core: https://github.com/ruby/ruby/tree/trunk/test/ruby
+
+- Array: https://github.com/ruby/ruby/blob/trunk/test/ruby/test_array.rb
+- Hash: https://github.com/ruby/ruby/blob/trunk/test/ruby/test_hash.rb
+
+Ruby Std-lib:
+
+- Date, DateTime, Time: https://github.com/rubysl/rubysl-date/tree/2.0/spec
+- StringScanner: https://github.com/rubysl/rubysl-strscan/tree/2.0/spec
+
 
 #### TODO: Wykład 5. Refaktoryzacja kodu
 
 
-#### TODO: Wykład 6. Praca z *Legacy Code*
+#### TODO: Wykład 6. Obiekty *doubles*
 
-#### TODO: Wykład 7. Refaktoryzacja Legacy Code
+1\. Prawo Demeter –
+zasada minimalnej wiedzy lub Reguła ograniczania interakcji.
+(„rozmawiaj tylko z (bliskimi) przyjaciółmi”)
+
+W pełnej formie mówi ono, iż metoda danego obiektu
+może odwoływać się jedynie do metod należących do:
+
+- metod tego samego obiektu,
+- metod dowolnego parametru przekazanego do niej,
+- dowolnego obiektu przez nią stworzonego,
+- dowolnego składnika, klasy do której należy dana
+  metoda.
+
+2\. *Code smells*
+
+- Duża liczba `require`
+- Duża liczba *doubles*.
+- Wiele linii *setup*-u, dużo kodu w *doubles*.
+- Warunki (*if/case*) w kodzie testowym
+- Korzystanie z konstrukcji `send(:foobar)`
+
+Kiedy nie piszemy testów: w trakcie nauki i poznawania
+bibliotek, eksperymentowania…
+
+3\. Do czego używamy doubles?
+
+Doubles – co to jest?
+
+TODO: wyjaśnić
+
+- Główne zasady stosowania doubles.
+- Problemy, nadużycia, ograniczenia.
+
+4\. Testy integracyjne
+
+TODO: wyjaśnić
+
+5\. Testy wydajnościowe
+
+TODO: wyjasnić
+
+
+#### TODO: Wykład 7. Praca z *Legacy Code*
+
+Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
+(Michael Feathers).
+
+TODO: 5-6 slajdów
+
+
+#### TODO: Wykład 8. Refaktoryzacja Legacy Code
 
 Tylko 45 min godzina. Wystarczą 3 slajdy.
