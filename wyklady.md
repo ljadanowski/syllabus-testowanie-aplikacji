@@ -147,13 +147,25 @@ doc.css('h3.r a').each do |link|
 end
 ```
 
-8\. Przykładowe skrypty.
+8\. Skrypty: `ARGV`, `ARGF`, *optparse*
 
-- argumenty wywołania programu
-- przetwarzanie opcji: http://www.sitepoint.com/command-line-apps-optionparse/
+- argumenty wywołania programu: commands, options
+
+Przykłady: wyklady/1/google.rb, wyklady/1/word_trans.rb
+
+Bash:
+```sh
+./google.rb tdd
+./word_trans.rb hello -u
+./word_trans.rb hello -u -r
+```
+
+Wiecej informacji:
+- http://stackoverflow.com/questions/273262/best-practices-with-stdin-in-ruby
+- http://ozmm.org/posts/argf.html
 
 
-#### Wykład 2. Podstawowe klasy.
+#### TODO: Wykład 2. Podstawowe klasy.
 
 1\. Przegląd metod klas Array i Hash.
 
