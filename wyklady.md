@@ -3,6 +3,16 @@
 
 * 8 wykładów = 7*2 godz. + 1 godz.
 
+<!--
+
+[NSS Software Development Fundamentals - Spring 2013][1] –
+tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
+Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
+
+[1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
+
+-->
+
 ### Wykłady
 
 1\. Wprowadzenie do języka Ruby.
@@ -46,15 +56,6 @@
 - Pokrycie testami.
 
 8\. Refaktoryzacja Legacy Code.
-
-
-----
-
-[NSS Software Development Fundamentals - Spring 2013][1] –
-tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
-Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
-
-[1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 
 
 ### Slajdy
