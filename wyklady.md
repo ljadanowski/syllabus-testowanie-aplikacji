@@ -160,7 +160,7 @@ Bash:
 ./word_trans.rb hello -u -r
 ```
 
-Wiecej informacji:
+Więcej informacji:
 - http://stackoverflow.com/questions/273262/best-practices-with-stdin-in-ruby
 - http://ozmm.org/posts/argf.html
 
