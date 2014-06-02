@@ -240,13 +240,34 @@ Dopisać mocne i słabe strony framweworków.
 
 2\. Dlaczego korzystamy z frameworka RSpec?
 
-- ...
+- Gemfile dla RSpec
 
-3\. Dostępne narzędzia
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+end
+```
+Uruchamiamy *RSpec* w trybie development:
 
-– ...
+```sh
+TODO: jak?
+```
 
-4\. Technologie jakie?
+3\. Korzystamy z gemów Capybara i Factory Girl.
+
+TODO: Gemfile, po przykładzie dla każdego z gemów.
+
+
+4\. Dostępne narzędzia
+
+- Ruby Version Manager (RVM),
+- Konfiguracja edytora (Atom/Emacs) do pracy z frameworkami
+
+– ... TODO: jeszcze coś?
+
+
+5\. Technologie jakie?
 
 - continous integration – Travis?
 - ...
