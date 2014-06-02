@@ -78,12 +78,11 @@ Gemy – cot to jest?
 Więcej informacji:
 * M. Marohnić. Ruby verbose mode and how it's broken.
   http://mislav.uniqpath.com/2011/06/ruby-verbose-mode/
-
-Bozhidar Batsov. Ruby Style Guide: https://github.com/bbatsov/ruby-style-guide
+* Bozhidar Batsov. Ruby Style Guide: https://github.com/bbatsov/ruby-style-guide
 * integracja statycznego analizatora kodu rubocop: https://github.com/bbatsov/rubocop
   z edytorami (Atom, Emacs)
 
-IPython + Ruby: https://github.com/minad/iruby
+<!-- IPython + Ruby: https://github.com/minad/iruby -->
 
 2\. Podstawowe elementy języka: instrukcje warunkowe.
 
