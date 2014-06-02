@@ -2,6 +2,9 @@
 ## Testowanie aplikacji w Ruby
 
 * 8 wykładów = 7*2 godz. + 1 godz.
+* Kod użyty w przykładach jest dostępny w repozytorium
+  https://github.com/projekty/syllabus-testowanie-aplikacji/
+  (TODO: przenieść kod do osobnego repozytorium.)
 
 <!--
 
@@ -352,7 +355,52 @@ Ruby Std-lib:
 
 #### TODO: Wykład 5. Refaktoryzacja kodu
 
-TODO: 5–6 slajdów
+1\. Na czym polega refaktoryzacja kodu?
+
+    Red -> Green -> Refactor
+
+Program wyliczający dla każdego *klienta* opłaty za *wypożyczenie* *filmu*
+(przykład z książki „Refactoring. Ruby Edition”).
+
+Klasy wyklad/5/00-wypozyczalnia.rb:
+
+- *Movie*
+- *Rental*
+- *Customer*
+
+2\. Refaktoryzacja #1.
+
+3\. Refaktoryzacja #2.
+
+4\. Refaktoryzacja #3.
+
+5\. Refaktoryzacja #3.
+
+
+6\. Jaki kod wymaga refaktoryzacji?
+
+- ze zduplikowanym kodem
+- metody z dużą ilością kodu
+- duże klasy
+- długa lista argumentów
+- „shotgun surgery” – zmiana w jednym miejscu pociąga za sobą
+  drobne zmiany w wielu innych miejscach
+- „divergent change” – przeciwieństwo „shotgun surgery”
+– „feature envy” – metoda korzystająca z wielu metod
+  innej klasy
+- przypadek instrukcji *case* – czasami można użyć polymorfizmu
+  do wyeliminowania tej instrukcji
+– „message chains” – łańcuchy wywołań
+– szaleństwo metaprogramowania
+
+Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
+
+7\. Co to jest samotestujący się kod?
+
+„Classes should contain their own tests.” – Dave Thomas (1992)
+
+W Ruby testy piszemy w oddzielnych klasach.
+Tak jest w przypadku frameworków RSpec i Test::Unit
 
 
 #### TODO: Wykład 6. Obiekty *doubles*
@@ -372,7 +420,7 @@ może odwoływać się jedynie do metod należących do:
 - dowolnego składnika, klasy do której należy dana
   metoda.
 
-2\. *Test code smells*
+2\. Kiedy kod testujący *smells*?
 
 - Duża liczba `require`
 - Duża liczba *doubles*.
