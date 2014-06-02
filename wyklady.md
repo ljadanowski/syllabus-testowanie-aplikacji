@@ -170,3 +170,18 @@ Więcej informacji:
 1\. Przegląd metod klas Array i Hash.
 
 2\. Klasy Date i Time
+
+
+#### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
+
+#### TODO: Wykład 4. Testy jednostkowe, integracyjne
+
+
+#### TODO: Wykład 5. Refaktoryzacja kodu
+
+
+#### TODO: Wykład 6. Praca z *Legacy Code*
+
+#### TODO: Wykład 7. Refaktoryzacja Legacy Code
+
+Tylko 45 min godzina. Wystarczą 3 slajdy.
