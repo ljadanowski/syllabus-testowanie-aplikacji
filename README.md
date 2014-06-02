@@ -1,17 +1,4 @@
-## Ruby – testowanie skryptów i bibliotek
-
-<!--
-**Luźne uwagi:**
-
-1. [NSS Software Development Fundamentals - Spring 2013][1] –
-tutaj jest rozpiska na zajęcia w kolejnych tygodniach zajęć.
-Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
-
-2. Pomysł na wprowadzenie/powtórkę – [Learn X in Y minutes][5].
-Podobne „starter code” można przygotować (np. w laboratorium+github)
-dla RSpec, Doubles, …
--->
-
+## Testowanie aplikacji w Ruby
 
 ### Wykład (15 godz.)
 
@@ -89,7 +76,6 @@ Różne rzeczy:
 [2]: http://rvm.io/rvm
 [3]: http://pragprog.com/book/achbd/the-rspec-book
 [4]: http://www.tutorialspoint.com/ruby/
-[5]: http://learnxinyminutes.com/docs/ruby/
 [6]: http://tryruby.org/levels/1/challenges/0
 [7]: https://www.codeschool.com/courses/testing-with-rspec
 [8]: https://github.com/colszowka/simplecov
