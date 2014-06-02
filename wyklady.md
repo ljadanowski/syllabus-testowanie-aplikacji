@@ -286,12 +286,13 @@ Kiedy zmieniamy kod, musimy zmienić też testy.
 
 5\. Izolacja – TODO: jakich elementów
 
-TODO: dla mnie niejasne. Można to odrobinkę uszczegółowić?
-
 Jak osiągamy izolację:
 
 * Dzielimy kod na pliki
 * Korzystamy z baz danych, gemów…
+
+TODO: Dla mnie niejasne.
+Czy można to co powyżej odrobinkę uszczegółowić?
 
 
 6\. Jak testowany jest kod Ruby Core i Std-lib.
@@ -327,7 +328,7 @@ może odwoływać się jedynie do metod należących do:
 - dowolnego składnika, klasy do której należy dana
   metoda.
 
-2\. *Code smells*
+2\. *Test code smells*
 
 - Duża liczba `require`
 - Duża liczba *doubles*.
