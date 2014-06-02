@@ -1,4 +1,4 @@
-## Ruby – testowanie aplikacji
+## Ruby – testowanie skryptów i bibliotek
 
 <!--
 **Luźne uwagi:**
