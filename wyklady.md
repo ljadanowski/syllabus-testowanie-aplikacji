@@ -60,7 +60,7 @@ Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 
 #### Wykład 1. Wprowadzenie do języka Ruby.
 
-1. Skrypt *hello world*.
+1\. Skrypt *hello world*.
 
 Bash:
 ```sh
@@ -85,13 +85,13 @@ Bozhidar Batsov. Ruby Style Guide: https://github.com/bbatsov/ruby-style-guide
 
 IPython + Ruby: https://github.com/minad/iruby
 
-2. Podstawowe elementy języka: instrukcje warunkowe.
+2\. Podstawowe elementy języka: instrukcje warunkowe.
 
 - `if / elsif / else / end`, modyfikator `if`
 - `unless / else / end`, modyfikator `unless`
 - `case / when / else / end`
 
-3. Podstawowe elementy języka: pętle.
+3\. Podstawowe elementy języka: pętle.
 
 - `while / end`, modyfikator `while`
 - `begin / end / while`
@@ -99,14 +99,14 @@ IPython + Ruby: https://github.com/minad/iruby
 - `for / in / end`
 - wcześniejsze kończenie pętli: `break`, `next`, `redo`
 
-4. Podstawowe elementy języka: metody (funkcje).
+4\. Podstawowe elementy języka: metody (funkcje).
 
 - `def / end`, domyślne wartości parametrów
 - wartość (wartości) zwracane
 - zmienna liczba parametrów
 - `alias` i `undef`
 
-5. Podstawowe elementy języka: klasy.
+5\. Podstawowe elementy języka: klasy.
 
 - Obiektowość: data encapsulation, data abstraction,
   polymorphism, inheritance
@@ -115,7 +115,7 @@ IPython + Ruby: https://github.com/minad/iruby
 - zmienne lokalne, zmienne instancji, zmienne klasowe, zmienne globalne
 - metody obiektu, klasy
 
-6. Podstawowe elementy języka: moduły.
+6\. Podstawowe elementy języka: moduły.
 
 Modułów używamy do grupowania metod, klas i stałych.
 
@@ -128,7 +128,7 @@ Zalety modułów:
 - dostarczają przestrzeni nazw
 - moduły implementują domieszkowanie/*mixin*
 
-7. Korzystamy z Gemów.
+7\. Korzystamy z Gemów.
 
 - Bundler – co to jest? http://bundler.io/
 - pliki *Gemfile* i *Gemfile.lock*
@@ -148,7 +148,7 @@ doc.css('h3.r a').each do |link|
 end
 ```
 
-8. Przykładowe skrypty.
+8\. Przykładowe skrypty.
 
 - argumenty wywołania programu
 - przetwarzanie opcji: http://www.sitepoint.com/command-line-apps-optionparse/
