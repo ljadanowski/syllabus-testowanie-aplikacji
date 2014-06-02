@@ -60,7 +60,7 @@ Coś takiego trzeba będzie zrobić później. Pewnie w maju lub czerwcu.
 
 ### Slajdy
 
-#### Wykład 1. Wprowadzenie do języka Ruby.
+#### Wykład 1. Wprowadzenie do języka Ruby
 
 1\. Skrypt *hello world*.
 
