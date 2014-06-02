@@ -231,6 +231,27 @@ Dokumentacja (Ruby StdLib):
 
 #### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
+TODO: 4–5 slajdów.
+
+1\. Jakaś definicja testowania.
+
+Wymienić używane frameworki do testowania.
+Dopisać mocne i słabe strony framweworków.
+
+2\. Dlaczego korzystamy z frameworka RSpec?
+
+- ...
+
+3\. Dostępne narzędzia
+
+– ...
+
+4\. Technologie jakie?
+
+- continous integration – Travis?
+- ...
+
+
 #### TODO: Wykład 4. Testy jednostkowe
 
 Testy jednostkowe – co to jest?
