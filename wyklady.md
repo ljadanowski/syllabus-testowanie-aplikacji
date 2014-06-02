@@ -231,9 +231,9 @@ Dokumentacja (Ruby StdLib):
 
 #### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
-#### TODO: Wykład 4. Testy jednostkowe, integracyjne
+#### TODO: Wykład 4. Testy jednostkowe
 
-1\. Testy jednostkowe
+Testy jednostkowe – co to jest?
 
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
