@@ -374,7 +374,7 @@ Klasy wyklad/5/00-wypozyczalnia.rb:
 
 4\. Refaktoryzacja #3.
 
-5\. Refaktoryzacja #3.
+5\. Refaktoryzacja #4.
 
 
 6\. Jaki kod wymaga refaktoryzacji?
