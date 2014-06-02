@@ -238,13 +238,17 @@ Dokumentacja (Ruby StdLib):
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
 
+TODO: 2–3 przykłady
+
 2\. Po co piszemy testy jednostkowe
 
 * Natychmiastowy feedback.
-* Wyraźna lokalizacja błędu
-* Lepszy kod.
+* Wyraźna lokalizacja błędu.
+* Lepszy kod – TODO: wyjaśnić w jakim sensie.
 
 3\. Automatyzacja z pomocą RSpec, Guard
+
+Co automatyzujemy: TODO – dopisać.
 
 *Gemfile*:
 ```ruby
@@ -260,9 +264,11 @@ Bash:
 bundle install
 ```
 
-4\. Piszemy Kod: top-down czy bottom-up?
+4\. Testujemy: test-first czy test-last?
 
-Testowanie: test-first czy test-last?
+TODO: napisać kiedy test-first czy test-last.
+
+Piszemy kod: top-down czy bottom-up?
 
 Mantra Test Driven Development (TDD):
 
@@ -277,12 +283,16 @@ i co traktować jako „unit” ewoluują.
 
 Kiedy zmieniamy kod, musimy zmienić też testy.
 
-5\. Izolacja
+
+5\. Izolacja – TODO: jakich elementów
+
+TODO: dla mnie niejasne. Można to odrobinkę uszczegółowić?
 
 Jak osiągamy izolację:
 
 * Dzielimy kod na pliki
 * Korzystamy z baz danych, gemów…
+
 
 6\. Jak testowany jest kod Ruby Core i Std-lib.
 
@@ -298,6 +308,8 @@ Ruby Std-lib:
 
 
 #### TODO: Wykład 5. Refaktoryzacja kodu
+
+TODO: 5–6 slajdów
 
 
 #### TODO: Wykład 6. Obiekty *doubles*
@@ -328,9 +340,7 @@ bibliotek, eksperymentowania…
 
 3\. Do czego używamy doubles?
 
-Doubles – co to jest?
-
-TODO: wyjaśnić
+Doubles – co to jest? TODO: wyjaśnić
 
 - Główne zasady stosowania doubles.
 - Problemy, nadużycia, ograniczenia.
@@ -341,7 +351,7 @@ TODO: wyjaśnić
 
 5\. Testy wydajnościowe
 
-TODO: wyjasnić
+TODO: wyjaśnić
 
 
 #### TODO: Wykład 7. Praca z *Legacy Code*
