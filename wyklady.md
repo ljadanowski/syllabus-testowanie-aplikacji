@@ -368,13 +368,61 @@ Klasy wyklad/5/00-wypozyczalnia.rb:
 - *Rental*
 - *Customer*
 
+Uwagi odnośnie kodu: „quick and dirty program”.
+Słabo zaprojektowany. Mało obiektowy.
+
+Dlaczego? Przekonamy się o tym jak zaczniemy zmieniać kod.
+Na przykład, dodamy nowe `results` w HTML,
+zmienią się zasady naliczania opłat (do poprawki też oba `results`),
+zmienią się kategorie filmów
+
+**Zanim zaczniemy refactoryzację kodu powinniśmy dopisać testy!**
+Dlaczego? Feedback, Regression…
+
 2\. Refaktoryzacja #1.
 
-3\. Refaktoryzacja #2.
+Dekompozycja i redystrybucja metody `statement`.
+Dlaczego? za długi kod. Mniejszymi kawałkami łatwiej zarządzać.
 
-4\. Refaktoryzacja #3.
+Plik: wyklad/5/01-wypozyczalnia.rb
 
-5\. Refaktoryzacja #4.
+Bash:
+```sh
+diff -C 1 -U wypozyczalnia.rb 01-wypozyczalnia.rb
+```
+Zastosowane techniki:
+
+- *Extract Method* do instrukcji `case`.
+  Jak to zrobić w bezpieczny sposób bez wprowadzenia
+  bugów do kodu?
+
+3\. Instrukcję `case` zamieniamy na `this_amount = amount_for(element)`
+
+```ruby
+this_amount = 0
+case element.movie.price_code
+when Movie::Regular
+  this_amount += 2
+  this_amount += (element.days_rented - 2) * 1.5 if element.days_rented > 2
+when Movie::NEW_RELAESE
+  this_amount += element.days_rented * 3
+when Movie::CHILDRENS
+  this_amount += 1.5
+  this_amount += (element.days_rented - 3) * 1.5 if element.days_rented > 3
+end
+```
+
+4\. Metoda `amount_for`
+
+```ruby
+
+```
+
+4\. Refaktoryzacja #2.
+
+5\. Refaktoryzacja #3.
+
+6\. Refaktoryzacja #4.
 
 
 6\. Jaki kod wymaga refaktoryzacji?
