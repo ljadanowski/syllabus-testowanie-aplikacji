@@ -388,7 +388,7 @@ Plik: wyklad/5/01-wypozyczalnia.rb
 
 Bash:
 ```sh
-diff -U 0 wypozyczalnia.rb 01-wypozyczalnia.rb
+diff -U 0 00-wypozyczalnia.rb 01-wypozyczalnia.rb
 ```
 Zastosowane techniki:
 
@@ -435,14 +435,71 @@ W oryginalnym kodzie zmieniamy nazwy zmiennych:
 
 5\. Refaktoryzacja #2.
 
+Przenosimy obliczenia `amount_for` do klasy Rental.
+Dlaczego?
+Korzysta z informacji z Rental i nie korzysta – z Customer.
+
+Plik: wyklad/5/02-wypozyczalnia.rb
+
+Bash:
+```sh
+diff -U 0 01-wypozyczalnia.rb 02-wypozyczalnia.rb
+```
+
+6\. Klasy Rental i Customer (tylko zmiany)
+
+```ruby
+class Rental
+  def charge
+    ...
+  end
+end
+class Customer
+  def amount_for(rental)
+    rental.charge
+  end
+end
+```
+
+Po napisaniu metody `charge` i sprawdzeniu, że niczego
+nie popsuliśmy, starą metodę `amount_for` zastępujemy nową `charge`
+(`this_amount` jest zbędne).
 
 
-6\. Refaktoryzacja #3.
+7\. Refaktoryzacja #3.
 
-7\. Refaktoryzacja #4.
+Ekstrakcja `frequent_renter_points`:
+przenosimy z klasy Customer do klasy Rental
+
+```ruby
+frequent_renter_points += 1
+if element.movie.price_code = Movie::NEW_RELEASE && element.days_rented > 1
+  frequent_renter_points += 1
+end
+```
+Plik: wyklad/5/03-wypozyczalnia.rb
 
 
-6\. Jaki kod wymaga refaktoryzacji?
+8\. Klasy Rental i Customer (tylko zmiany)
+
+```ruby
+class Rental
+  def frequent_renter_points
+
+  end
+end
+class Customer
+  ...
+  @rentals.each do |element|
+    frequent_renter_points += element.frequent_renter_points
+  ...
+end
+```
+
+9\. Refaktoryzacja #4.
+
+
+10\. Jaki kod wymaga refaktoryzacji?
 
 - ze zduplikowanym kodem
 - metody z dużą ilością kodu
