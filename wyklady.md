@@ -509,6 +509,8 @@ Usuwamy dwie zmienne tymczasowe:
 
 10\. Zamieniamy `total_amount` metodą prywatną `total_charge`
 
+Plik: wyklad/5/04-wypozyczalnia.rb
+
 To nie jest prosty przypadek eliminacji zmiennej tymczasowej –
 musimy wykonać jescze raz pętlę.
 
@@ -523,7 +525,19 @@ def total_charge
 end
 ```
 
-11\. Jaki kod wymaga refaktoryzacji?
+11\. Usuwamy zmienną tymczasową `frequent_renter_points`
+
+Postępujemy tak samo jak w wypadku `total_amount` powyżej.
+
+Plik: wyklad/5/05-wypozyczalnia.rb
+
+
+12\. Bonus: Customer#html_statement
+
+Plik: wyklad/5/06-wypozyczalnia.rb
+
+
+12\. Jaki kod wymaga refaktoryzacji?
 
 - ze zduplikowanym kodem
 - metody z dużą ilością kodu
@@ -541,7 +555,7 @@ end
 
 Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
 
-12\. Co to jest samotestujący się kod?
+13\. Co to jest samotestujący się kod?
 
 „Classes should contain their own tests.” – Dave Thomas (1992)
 
