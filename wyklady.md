@@ -371,10 +371,10 @@ Klasy wyklad/5/00-wypozyczalnia.rb:
 Uwagi odnośnie kodu: „quick and dirty program”.
 Słabo zaprojektowany. Mało obiektowy.
 
-Dlaczego? Przekonamy się o tym jak zaczniemy zmieniać kod.
+Dlaczego? Przekonamy się o tym jak tylko zaczniemy zmieniać kod.
 Na przykład, dodamy nowe `results` w HTML,
-zmienią się zasady naliczania opłat (do poprawki też oba `results`),
-zmienią się kategorie filmów
+zmienią się zasady naliczania opłat (wtedy do poprawki będą oba `results`),
+zmienią się / dojdą nowe kategorie filmów.
 
 **Zanim zaczniemy refactoryzację kodu powinniśmy dopisać testy!**
 Dlaczego? Feedback, Regression…
