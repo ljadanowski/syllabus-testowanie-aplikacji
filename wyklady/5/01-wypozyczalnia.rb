@@ -54,8 +54,6 @@ class Customer
     result
   end
 
-  # w oryginalnym kodzie zmieniamy nazwy zmiennych:
-  #   element -> rental, this_amount -> result
   def amount_for(rental)
     result = 0
 
