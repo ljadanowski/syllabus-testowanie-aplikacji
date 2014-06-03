@@ -613,6 +613,9 @@ Tak jest w przypadku frameworków RSpec i Test::Unit
 Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
 (Michael Feathers).
 
+
+#### TODO: Wykład 8. Refaktoryzacja Legacy Code
+
 1\. Refaktoryzacja – zaawansowane techniki
 
 Zaczynamy od: wyklady/7/06-wypozyczalnia.rb
@@ -815,8 +818,3 @@ movie2.price = RegularPrice.new
 ```
 
 Poprzednio nie było to możliwe!
-
-
-#### TODO: Wykład 8. Refaktoryzacja Legacy Code
-
-Tylko 45 min godzina. Wystarczą 3 slajdy.
