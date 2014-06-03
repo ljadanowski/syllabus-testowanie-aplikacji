@@ -616,17 +616,17 @@ Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
 
 #### TODO: Wykład 8. Refaktoryzacja Legacy Code
 
-1\. Refaktoryzacja – zaawansowane techniki
+1\. Zaawansowane techniki refaktoryzacji kodu.
 
-Zaczynamy od: wyklady/7/06-wypozyczalnia.rb
+Plik: wyklady/7/06-wypozyczalnia.rb
 
-W klasie Rental w instrukcji `case` wybieramy
-warunek korzystajac z wartości atrybuto obiektu innej klasy.
+W klasie Rental w instrukcji `case` widzimy
+warunek korzystajacy z wartości **atrybutu obiektu innej klasy**.
+
 Pachnie to problemami na odległość.
 
-2\. Przenosiny Rental#charge do Movie#charge()
 
-Zaczynamy od: wyklady/7/07-wypozyczalnia.rb
+2\. Dlatego przenosimy `Rental#charge` do `Movie#charge`
 
 ```ruby
 class Rental
@@ -642,9 +642,10 @@ class Movie
 end
 ```
 
-3\. Przenosiny Rental#frequent_renter_points do Movie
+Plik: wyklady/7/07-wypozyczalnia.rb
 
-Plik: wyklady/7/08-wypozyczalnia.rb
+
+3\. Przenosimy `Rental#frequent_renter_points` do `Movie`
 
 ```ruby
 class Rental
@@ -658,6 +659,8 @@ class Movie
   end
 end
 ```
+Plik: wyklady/7/08-wypozyczalnia.rb
+
 
 4\. Wymieniamy `case` korzystając z polymorfizmu
 
@@ -665,11 +668,10 @@ Każdy gatunek filmu jest nieco inaczej obsługiwany
 (inaczej odpowiada na tę samą *message*).
 
 Usuniemy instrukcję `case` korzystając ze *State Pattern*
-(z książki autorów *Gang of Four*).
+(wzorzec projektowy z książki autorów *Gang of Four*).
+
 
 5\. Pierwszy krok.
-
-Plik: wyklady/7/09-wypozyczalnia.rb
 
 ```ruby
 class Movie
@@ -684,6 +686,7 @@ class Movie
   end
 end
 ```
+Plik: wyklady/7/09-wypozyczalnia.rb
 
 Po tych zmianach wszystko powinno działać.
 
@@ -693,9 +696,9 @@ ruby 09-wypozyczalnia.rb
 
 6\. Dodajemy trzy nowe klasy
 
-* RegularPrice
-* NewReleasePrice
-* ChildrenPrice
+* `RegularPrice`
+* `NewReleasePrice`
+* `ChildrenPrice`
 
 7\. I zmieniamy kod metody `price_code=`
 
