@@ -388,13 +388,13 @@ Plik: wyklad/5/01-wypozyczalnia.rb
 
 Bash:
 ```sh
-diff -C 1 -U wypozyczalnia.rb 01-wypozyczalnia.rb
+diff -U 0 wypozyczalnia.rb 01-wypozyczalnia.rb
 ```
 Zastosowane techniki:
 
 - *Extract Method* do instrukcji `case`.
-  Jak to zrobić w bezpieczny sposób bez wprowadzenia
-  bugów do kodu?
+  Jak to zrobić w bezpieczny sposób bez wprowadzenia bugów do kodu?
+  Uważnie?
 
 3\. Instrukcję `case` zamieniamy na `this_amount = amount_for(element)`
 
@@ -415,14 +415,31 @@ end
 4\. Metoda `amount_for`
 
 ```ruby
-
+def amount_for(rental)
+  result = 0
+  case rental.movie.price_code
+  when Movie::REGULAR
+    result += 2
+    result += (rental.days_rented - 2) * 1.5 if rental.days_rented > 2
+  when Movie::NEW_RELEASE
+    result += rental.days_rented * 3
+  when Movie::CHILDRENS
+    result += 1.5
+    result += (rental.days_rented - 3) * 1.5 if rental.days_rented > 3
+  end
+end
 ```
 
-4\. Refaktoryzacja #2.
+W oryginalnym kodzie zmieniamy nazwy zmiennych:
+`element` -> `rental`, `this_amount` -> `result`
 
-5\. Refaktoryzacja #3.
+5\. Refaktoryzacja #2.
 
-6\. Refaktoryzacja #4.
+
+
+6\. Refaktoryzacja #3.
+
+7\. Refaktoryzacja #4.
 
 
 6\. Jaki kod wymaga refaktoryzacji?
