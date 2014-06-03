@@ -555,13 +555,6 @@ Plik: wyklad/5/06-wypozyczalnia.rb
 
 Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
 
-13\. Co to jest samotestujący się kod?
-
-„Classes should contain their own tests.” – Dave Thomas (1992)
-
-W Ruby testy piszemy w oddzielnych klasach.
-Tak jest w przypadku frameworków RSpec i Test::Unit
-
 
 #### TODO: Wykład 6. Obiekty *doubles*
 
@@ -606,6 +599,13 @@ TODO: wyjaśnić
 5\. Testy wydajnościowe
 
 TODO: wyjaśnić
+
+6\. Co to jest samotestujący się kod?
+
+„Classes should contain their own tests.” – Dave Thomas (1992)
+
+W Ruby testy piszemy w oddzielnych klasach.
+Tak jest w przypadku frameworków RSpec i Test::Unit
 
 
 #### TODO: Wykład 7. Praca z *Legacy Code*
