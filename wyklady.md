@@ -353,7 +353,7 @@ Ruby Std-lib:
 - StringScanner: https://github.com/rubysl/rubysl-strscan/tree/2.0/spec
 
 
-#### TODO: Wykład 5. Refaktoryzacja kodu
+#### Wykład 5. Refaktoryzacja kodu
 
 1\. Na czym polega refaktoryzacja kodu?
 
