@@ -485,7 +485,7 @@ Plik: wyklad/5/03-wypozyczalnia.rb
 ```ruby
 class Rental
   def frequent_renter_points
-
+    movie.price_code = (Movie::NEW_RELEASE && days_rented > 1) ? 2 : 1
   end
 end
 class Customer
@@ -498,8 +498,32 @@ end
 
 9\. Refaktoryzacja #4.
 
+Niebezpieczne zmienne tymczasowe:
 
-10\. Jaki kod wymaga refaktoryzacji?
+- użyteczne w kontekście metody, zachęcają
+  do pisania długich skomplikowanych metod
+
+Usuwamy dwie zmienne tymczasowe:
+
+    total_amount i frequent_renter_points
+
+10\. Zamieniamy `total_amount` metodą prywatną `total_charge`
+
+To nie jest prosty przypadek eliminacji zmiennej tymczasowej –
+musimy wykonać jescze raz pętlę.
+
+```ruby
+def total_charge
+  #  result = 0
+  #  @rentals.each do |element|
+  #    result += element.charge
+  #  end
+  #  result
+  @rentals.inject(0) { |sum, rental| sum += rental.charge }
+end
+```
+
+11\. Jaki kod wymaga refaktoryzacji?
 
 - ze zduplikowanym kodem
 - metody z dużą ilością kodu
@@ -517,7 +541,7 @@ end
 
 Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
 
-7\. Co to jest samotestujący się kod?
+12\. Co to jest samotestujący się kod?
 
 „Classes should contain their own tests.” – Dave Thomas (1992)
 
