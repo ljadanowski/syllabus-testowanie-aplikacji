@@ -614,7 +614,7 @@ Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
 (Michael Feathers).
 
 
-#### TODO: Wykład 8. Refaktoryzacja Legacy Code
+#### Wykład 8. Refaktoryzacja Legacy Code
 
 1\. Zaawansowane techniki refaktoryzacji kodu.
 
