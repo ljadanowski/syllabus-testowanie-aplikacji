@@ -613,7 +613,208 @@ Tak jest w przypadku frameworków RSpec i Test::Unit
 Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
 (Michael Feathers).
 
-TODO: 5-6 slajdów
+1\. Refaktoryzacja – zaawansowane techniki
+
+Zaczynamy od: wyklady/7/06-wypozyczalnia.rb
+
+W klasie Rental w instrukcji `case` wybieramy
+warunek korzystajac z wartości atrybuto obiektu innej klasy.
+Pachnie to problemami na odległość.
+
+2\. Przenosiny Rental#charge do Movie#charge()
+
+Zaczynamy od: wyklady/7/07-wypozyczalnia.rb
+
+```ruby
+class Rental
+  def charge
+    movie.charge(days_rented)
+  end
+end
+class Movie
+  def charge(days_rented)
+    result = 0
+    ... wklejamy case bez zmian
+  end
+end
+```
+
+3\. Przenosiny Rental#frequent_renter_points do Movie
+
+Plik: wyklady/7/08-wypozyczalnia.rb
+
+```ruby
+class Rental
+  def frequent_renter_points
+    movie.frequent_renter_points(days_rented)
+  end
+end
+class Movie
+  def frequent_renter_points(days_rented)
+    (price_code == Movie::NEW_RELEASE && days_rented > 1) ? 2 : 1
+  end
+end
+```
+
+4\. Wymieniamy `case` korzystając z polymorfizmu
+
+Każdy gatunek filmu jest nieco inaczej obsługiwany
+(inaczej odpowiada na tę samą *message*).
+
+Usuniemy instrukcję `case` korzystając ze *State Pattern*
+(z książki autorów *Gang of Four*).
+
+5\. Pierwszy krok.
+
+Plik: wyklady/7/09-wypozyczalnia.rb
+
+```ruby
+class Movie
+  attr_reader :price_code
+
+  def price_code=(value)
+    @price_code = value
+  end
+
+  def initialize(title, the_price_code)
+    @title, self.price_code = title, the_price_code
+  end
+end
+```
+
+Po tych zmianach wszystko powinno działać.
+
+```bash
+ruby 09-wypozyczalnia.rb
+```
+
+6\. Dodajemy trzy nowe klasy
+
+* RegularPrice
+* NewReleasePrice
+* ChildrenPrice
+
+7\. I zmieniamy kod metody `price_code=`
+
+```ruby
+class Movie
+  def price_code=(value)
+    @price_code = value
+    @price = case price_code
+      when REGULAR then RegularPrice.new
+      when NEW_RELEASE then NewReleasePrice.new
+      when CHILDRENS then ChildrenPrice.new
+    end
+  end
+end
+```
+
+8\. Wybieramy metodę, która ma być polymorficzna
+
+Wybieramy: `Movie#charge`.
+
+```ruby
+class RegularPrice
+  def charge(days_rented)
+    result += 2
+    result += (days_rented - 2) * 1.5 if days_rented > 2
+    result
+  end
+end
+class Movie
+  ...
+  def charge(days_rented)
+    result = 0
+    case price_code
+    when Movie::REGULAR
+      @price.charge(days_rented)
+```
+
+9\. W podobny sposób upraszczamy `case`
+dla `Movie::NEW_RELEASE` oraz `Movie::CHILDRENS`
+
+```ruby
+def charge(days_rented)
+  result = 0
+  case price_code
+  when Movie::REGULAR
+    return @price.charge(days_rented)
+  when Movie::NEW_RELEASE
+    return @price.charge(days_rented)
+  when Movie::CHILDRENS
+    return @price.charge(days_rented)
+  end
+end
+```
+
+Co można uprościć do:
+
+```ruby
+def charge(days_rented)
+  @price.charge(days_rented)
+end
+```
+
+Plik: wyklady/7/10-wypozyczalnia.rb
+
+
+10\. Polymorficzne `Movie#frequent_renter_points`
+
+Metoda `frequent_renter_points` jest taka sama
+dla ChildrenPrice i RegularPrice, a inna dla NewReleasePrice.
+
+Plik: wyklady/7/11-wypozyczalnia.rb
+
+Użyjemy Modułów i domieszkowania.
+
+
+11\. Moduły i domieszkowanie kodu modułów w klasach
+
+```ruby
+module DefaultPrice
+  def frequent_renter_points(days_rented)
+    1
+  end
+end
+class RegularPrice
+  include DefaultPrice
+...
+class ChildrenPrice
+  include DefaultPrice
+...
+class NewReleasePrice
+  def frequent_renter_points(days_rented)
+    days_rented > 1 ? 2 : 1
+  end
+...
+class Movie
+  def frequent_renter_points(days_rented)
+    @price.frequent_renter_points(days_rented)
+  end
+...
+```
+
+12\. Ostatni krok…
+
+Usuwamy `case` z `price_code=`.
+
+Jak?
+Plik: wyklady/7/12-wypozyczalnia.rb
+
+Podmieniamy przykład użycia:
+
+```ruby
+movie1 = Movie.new("Milion sposobów, jak zginąć na Zachodzie", NewReleasePrice.new)
+movie2 = Movie.new("Uśpieni", ChildrenPrice.new)
+```
+
+Teraz można też zmienic kategorię filmu:
+
+```ruby
+movie2.price = RegularPrice.new
+```
+
+Poprzednio nie było to możliwe!
 
 
 #### TODO: Wykład 8. Refaktoryzacja Legacy Code
