@@ -512,7 +512,7 @@ Usuwamy dwie zmienne tymczasowe:
 Plik: wyklad/5/04-wypozyczalnia.rb
 
 To nie jest prosty przypadek eliminacji zmiennej tymczasowej –
-musimy wykonać jescze raz pętlę.
+musimy wykonać jeszcze raz pętlę.
 
 ```ruby
 def total_charge
