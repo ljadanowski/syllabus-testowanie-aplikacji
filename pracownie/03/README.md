@@ -8,6 +8,12 @@
 * [rspec-core](https://github.com/rspec/rspec-core)
 * [rspec-mocks](https://github.com/rspec/rspec-mocks)
 
+Testy uruchamiamy w następujący sposób:
+
+```sh
+rspec       # tylko kropki
+rspec -cfd  # więcej szczegółów
+```
 
 ## Podpinanie aplikacji do [Travisa](https://travis-ci.org/)
 
