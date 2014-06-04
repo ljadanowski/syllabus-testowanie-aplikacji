@@ -285,9 +285,27 @@ bundle exec guard
 
 4\. Testujemy: test-first czy test-last?
 
-TODO: napisać kiedy test-first czy test-last.
+Nie ma jednej prawdziwej odpowiedzi na pytanie czy powinno sie pierw pisać kod, czy testy.
+Każde z podejść ma swoje plusy i minusy.
+
+Test first z góry daje nam 100% pokrycie testami (Każdy kod jaki dodajemy do aplikacji poprzedzony jest napisanymi do niego testami).
+Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo mniej integracyjnych. Dodawane by sprawdzić połączenia między unitami.
+Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu który nie dokońca rozumiemy. Zajmuje też stusunkowo więcej czasu,
+ale kod otrzymany na końcu jest zazwyczaj lepszy.
+
+Najlepszą odpowiedzią na pytanie czy test-first czy tez test-last jest zrozumienie problemu. Jeśli doskonale wiemy co nasz kod ma robić.
+Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później. W przeciwnym wypadku najlepiej sprawdza się drugie podejście.
 
 Piszemy kod: top-down czy bottom-up?
+
+Zazwyczaj to od nas nie zależy. Top-down jest spotykany zazwyczaj w dużych projektach, zespołach (korporacjach), gdzie inni ludzie projektują system,
+a inni go piszą. Developer wtedy zazwyczaj dostaje do napisania konkretny kawałek systemu, który został zaprojektowany przez kogoś innego.
+
+Bottom-up, występuje w sytuacji gdy z małych części systemu budujemy złożony produkt. Często na początku nie znając dokładnego kształtu systemu.
+Z małych klocków budujemy złożone systemy
+
+https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design
+
 
 Mantra Test Driven Development (TDD):
 
@@ -302,7 +320,7 @@ i co traktować jako „unit” ewoluują.
 
 Kiedy zmieniamy kod, musimy zmienić też testy.
 
-5\. Izolacja – TODO: jakich elementów
+5\. Izolacja
 
 Jak osiągamy izolację:
 
