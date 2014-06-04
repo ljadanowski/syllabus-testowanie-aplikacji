@@ -197,7 +197,7 @@ end
 Uruchamiamy *RSpec* w trybie development:
 
 ```sh
-TODO: jak?
+  bundle exec rspec
 ```
 
 3\. Korzystamy z gemów Capybara i Factory Girl.
@@ -219,37 +219,68 @@ TODO: Gemfile, po przykładzie dla każdego z gemów.
 - ...
 
 
-#### TODO: Wykład 4. Testy jednostkowe
+#### Wykład 4. Testy jednostkowe
 
 Testy jednostkowe – co to jest?
 
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
 
-TODO: kod – 2–3 przykłady testów, tak aby było widać izolację.
+```ruby
+class Array
+  def sum
+    reduce(0,:+)
+  end
+end
+
+describe Array do
+  describe '#sum' do
+    it 'returns 0 for empty array' do
+      expect( [].sum ).to eq(0)
+    end
+
+    it 'returns proper sum of all elements' do
+      expect( [1, 2, 3, 4, 5].sum ).to eq(15)
+    end
+
+    it 'raise error if array include non numeral values' do
+      expect{
+        [1, 2, 3, 4, 5].sum
+      }.to raise_error
+    end
+  end
+end
+```
 
 2\. Po co piszemy testy jednostkowe
 
 * Natychmiastowy feedback.
 * Wyraźna lokalizacja błędu.
-* Lepszy kod – TODO: wyjaśnić w jakim sensie.
+* Lepszy kod – (mniejsze metody, zgodne z filozofia Unix. Robiące tylko jedną rzecz.
+                Z wyraźnymi granicami (unikamy stanów globalnych, przekazujemy stan do metody)
 
 3\. Automatyzacja z pomocą RSpec, Guard
 
-Co automatyzujemy: TODO – dopisać.
+Najprostsze testowanie robi każdy, nawet o tym nie wiedząc. Kiedy sprawdzamy ręcznie napisany kod, czy to w konsoli czy przegladarce.
+Taka forma jest nieoptymalna (zabiera dużo czasu, oraz element ludzki (znudzeni omijamy sprawdzenie wszytskiego za każdym razem).
+Automatyzacja pozwala napisać serie skryptów (testów) które manualne sprawdzanie automatyzują.
+
+Guard pozawala zrezygnować z ostatniej manualnej czynności, czyli każdorazowego uruchamiania testów ręcznie.
+Obserwuje pliki nad którymi pracujemy i automatycznie uruchamia powiązane z nimi testy.
 
 *Gemfile*:
 ```ruby
 group :development do
   gem 'rspec'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'guard-rspec', require: false
 end
 ```
 
 Bash:
 ```sh
 bundle install
+bundle exec guard init rspec
+bundle exec guard
 ```
 
 4\. Testujemy: test-first czy test-last?
@@ -271,19 +302,21 @@ i co traktować jako „unit” ewoluują.
 
 Kiedy zmieniamy kod, musimy zmienić też testy.
 
-
 5\. Izolacja – TODO: jakich elementów
 
 Jak osiągamy izolację:
 
-* Dzielimy kod na pliki
-* Korzystamy z baz danych, gemów…
+* Wyznaczamy wyraźne granice między elementami systemu
+* Nie korzystamy z zewnęrzych części aplikacji czy systemu: baza danych, system plików, ...
 
-TODO: Dla mnie niejasne.
-Czy można to co powyżej odrobinkę uszczegółowić?
-
+Każda część (unit) w aplikacji powinien wykonywać jedną rzecz, powinien być oddzielony od reszty systemu wyraźną granicą.
+Powinien mieć ustawiony stan na wejściu operować na nim i usawiać stan wyjściowy. Ten stan wejściowy mockujemy (sztucznie go ustawiamy),
+by móc go przetestować w izolacji i we wszystkich możliwych przypadkach.
 
 6\. Jak testowany jest kod Ruby Core i Std-lib.
+
+Jako przykłady dobrego testowania i kodu pokazał bym proejkty zgromadzowne w tej bazie: http://microrb.com
+Jest tam dużo micro projektów (małych bibliotek, otestowanych i napisanych bardzo profesjonalnie)
 
 Ruby Core: https://github.com/ruby/ruby/tree/trunk/test/ruby
 
