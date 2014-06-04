@@ -175,16 +175,28 @@ Dokumentacja (Ruby StdLib):
 - http://www.ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/DateTime.html
 
 
-#### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
-
-TODO: 4–5 slajdów.
+#### Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
 1\. Jakaś definicja testowania.
+
+Testowanie to proces który ma na celu weryfikację oraz walidację oprogramowania.
+Weryfikacja oprogramowania ma na celu sprawdzenie, czy wytwarzane oprogramowanie jest zgodne ze specyfikacją.
+Walidacja sprawdza, czy oprogramowanie jest zgodne z oczekiwaniami użytkownika.
 
 Wymienić używane frameworki do testowania.
 Dopisać mocne i słabe strony framweworków.
 
-2\. Dlaczego korzystamy z frameworka RSpec?
+W środowisku ruby napupularniejsze framweworki do testowania:
+
+- RSpec - https://github.com/rspec
+- Minitest - https://github.com/seattlerb/minitest
+
+Minitest jest dostępny w Ruby od wersji 1.9. Dużo ,,prostszy'' niż rspec. Jednak zapewnia wszystkie elementy potrzebne do testowania: unit, spec, mock, benchmark
+RSpec - najpopularniejszy, kompletny system do testowania kodu w Ruby.
+
+Nie można wskazać lepszego czy gorszego, to bardziej kwestia składni i narzędzi. Minitest często wykorzystywany do testowania gemów by nie zwiększać ich zależnosci.
+
+2\. RSpec
 
 - Gemfile dla RSpec
 
@@ -194,30 +206,88 @@ group :development do
   gem 'rspec'
 end
 ```
-Uruchamiamy *RSpec* w trybie development:
+Uruchamiamy *RSpec*:
 
 ```sh
-  bundle exec rspec
+bundle exec rspec
 ```
 
 3\. Korzystamy z gemów Capybara i Factory Girl.
 
 TODO: Gemfile, po przykładzie dla każdego z gemów.
 
+Factory girl is a fixtures replacement with a straightforward definition syntax,
+support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects),
+and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
+
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+  gem 'factory_girl'
+end
+
+*spec_helper.rb*
+```ruby
+RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
+end
+```
+
+```ruby
+# This will guess the User class
+FactoryGirl.define do
+  factory :user do
+    first_name "John"
+    last_name  "Doe"
+    admin false
+  end
+
+  # This will use the User class (Admin would have been guessed)
+  factory :admin, class: User do
+    first_name "Admin"
+    last_name  "User"
+    admin      true
+  end
+end
+```
+
+Capybara helps you test web applications by simulating how a real user would interact with your app.
+
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+  gem 'capybara'
+end
+
+require 'capybara/rspec' inside test (or spec_helper)
+
+```ruby
+describe "the signin process", :type => :feature do
+  before :each do
+    User.make(:email => 'user@example.com', :password => 'caplin')
+  end
+
+  it "signs me in" do
+    visit '/sessions/new'
+    within("#session") do
+      fill_in 'Login', :with => 'user@example.com'
+      fill_in 'Password', :with => 'password'
+    end
+    click_link 'Sign in'
+    expect(page).to have_content 'Success'
+  end
+end
+```
 
 4\. Dostępne narzędzia
 
-- Ruby Version Manager (RVM),
-- Konfiguracja edytora (Atom/Emacs) do pracy z frameworkami
-
-– ... TODO: jeszcze coś?
-
-
-5\. Technologie jakie?
-
-- continous integration – Travis?
-- ...
-
+- Ruby Version Manager (RVM), rbenv
+- Konfiguracja edytora (Atom/Emacs/Vi) do pracy z frameworkami
+- guard
+- simplecov
+- continous integration – Travis
 
 #### Wykład 4. Testy jednostkowe
 
