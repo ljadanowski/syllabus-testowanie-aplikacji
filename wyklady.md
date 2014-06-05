@@ -366,29 +366,40 @@ bundle exec guard
 
 4\. Testujemy: test-first czy test-last?
 
-Nie ma jednej prawdziwej odpowiedzi na pytanie czy powinno sie pierw pisać kod, czy testy.
-Każde z podejść ma swoje plusy i minusy.
+Nie ma jednej prawdziwej odpowiedzi na pytanie czy powinno sie pierw
+pisać kod, czy testy.  Każde z podejść ma swoje plusy i minusy.
 
-Test first z góry daje nam 100% pokrycie testami (Każdy kod jaki dodajemy do aplikacji poprzedzony jest napisanymi do niego testami).
-Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo mniej integracyjnych. Dodawane by sprawdzić połączenia między unitami.
-Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu który nie dokońca rozumiemy. Zajmuje też stusunkowo więcej czasu,
-ale kod otrzymany na końcu jest zazwyczaj lepszy.
+Test first z góry daje nam 100% pokrycie testami (Każdy kod jaki
+dodajemy do aplikacji poprzedzony jest napisanymi do niego testami).
 
-Najlepszą odpowiedzią na pytanie czy test-first czy tez test-last jest zrozumienie problemu. Jeśli doskonale wiemy co nasz kod ma robić.
-Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później. W przeciwnym wypadku najlepiej sprawdza się drugie podejście.
+Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo mniej
+integracyjnych. Dodawane by sprawdzić połączenia między unitami.
 
-Piszemy kod: top-down czy bottom-up?
+Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu
+który nie dokońca rozumiemy. Zajmuje też stusunkowo więcej czasu, ale
+kod otrzymany na końcu jest zazwyczaj lepszy.
 
-Zazwyczaj to od nas nie zależy. Top-down jest spotykany zazwyczaj w dużych projektach, zespołach (korporacjach), gdzie inni ludzie projektują system,
-a inni go piszą. Developer wtedy zazwyczaj dostaje do napisania konkretny kawałek systemu, który został zaprojektowany przez kogoś innego.
-
-Bottom-up, występuje w sytuacji gdy z małych części systemu budujemy złożony produkt. Często na początku nie znając dokładnego kształtu systemu.
-Z małych klocków budujemy złożone systemy
-
-https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design
+Najlepszą odpowiedzią na pytanie czy test-first czy tez test-last jest
+zrozumienie problemu. Jeśli doskonale wiemy co nasz kod ma robić.
+Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później. W
+przeciwnym wypadku najlepiej sprawdza się drugie podejście.
 
 
-Mantra Test Driven Development (TDD):
+6\. Piszemy kod: top-down czy bottom-up?
+
+Zazwyczaj to od nas nie zależy. Top-down jest spotykany zazwyczaj w
+dużych projektach, zespołach (korporacjach), gdzie inni ludzie
+projektują system, a inni go piszą. Developer wtedy zazwyczaj dostaje
+do napisania konkretny kawałek systemu, który został zaprojektowany
+przez kogoś innego.
+
+Bottom-up, występuje w sytuacji gdy z małych części systemu budujemy
+złożony produkt. Często na początku nie znając dokładnego kształtu
+systemu.  Z małych klocków budujemy złożone systemy
+
+    https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design
+
+7\. Mantra Test Driven Development (TDD)
 
     Red -> Green -> Refactor
 
@@ -401,21 +412,29 @@ i co traktować jako „unit” ewoluują.
 
 Kiedy zmieniamy kod, musimy zmienić też testy.
 
-5\. Izolacja
+8\. Izolacja
 
 Jak osiągamy izolację:
 
 * Wyznaczamy wyraźne granice między elementami systemu
-* Nie korzystamy z zewnęrzych części aplikacji czy systemu: baza danych, system plików, ...
+* Nie korzystamy z zewnęrzych części aplikacji czy systemu,
+  np. baza danych, system plików
 
-Każda część (unit) w aplikacji powinien wykonywać jedną rzecz, powinien być oddzielony od reszty systemu wyraźną granicą.
-Powinien mieć ustawiony stan na wejściu operować na nim i usawiać stan wyjściowy. Ten stan wejściowy mockujemy (sztucznie go ustawiamy),
-by móc go przetestować w izolacji i we wszystkich możliwych przypadkach.
+Każda część (unit) w aplikacji powinien wykonywać jedną rzecz,
+powinien być oddzielony od reszty systemu wyraźną granicą.  Powinien
+mieć ustawiony stan na wejściu operować na nim i usawiać stan
+wyjściowy. Ten stan wejściowy mockujemy (sztucznie go ustawiamy), by
+móc go przetestować w izolacji i we wszystkich możliwych przypadkach.
 
-6\. Jak testowany jest kod Ruby Core i Std-lib.
+9\. Jak testowany jest kod Ruby Core i Std-lib.
 
-Jako przykłady dobrego testowania i kodu pokazał bym proejkty zgromadzowne w tej bazie: http://microrb.com
-Jest tam dużo micro projektów (małych bibliotek, otestowanych i napisanych bardzo profesjonalnie)
+Jako przykłady dobrego testowania i kodu pokazał bym proejkty
+zgromadzowne w tej bazie:
+
+    http://microrb.com
+
+Jest tam dużo micro projektów – małych bibliotek, otestowanych
+i napisanych profesjonalnie.
 
 Ruby Core: https://github.com/ruby/ruby/tree/trunk/test/ruby
 
@@ -426,6 +445,7 @@ Ruby Std-lib:
 
 - Date, DateTime, Time: https://github.com/rubysl/rubysl-date/tree/2.0/spec
 - StringScanner: https://github.com/rubysl/rubysl-strscan/tree/2.0/spec
+
 
 
 #### Wykład 5. Refaktoryzacja kodu
