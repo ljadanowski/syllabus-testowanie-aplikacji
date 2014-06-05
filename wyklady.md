@@ -282,13 +282,14 @@ describe "the signin process", :type => :feature do
 end
 ```
 
-4\. Dostępne narzędzia
+4\. Użyteczne narzędzia, gemy
 
-- Ruby Version Manager (RVM), rbenv
-- Konfiguracja edytora (Atom/Emacs/Vi) do pracy z frameworkami
-- guard
-- simplecov
-- continous integration – Travis
+- Ruby Version Manager (RVM) lub rbenv
+- gem guard
+- gem simplecov
+- Platforma continous integration – Travis
+- Edytory Atom/Emacs/Vi o ile skonfigurujemy je
+  do pracy z frameworkami
 
 
 #### Wykład 4. Testy jednostkowe
