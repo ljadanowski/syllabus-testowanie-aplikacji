@@ -294,7 +294,7 @@ end
 
 #### Wykład 4. Testy jednostkowe
 
-1\. O to jest test jednostkowy?
+1\. Co to jest test jednostkowy?
 
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
