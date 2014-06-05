@@ -72,6 +72,7 @@ Różne rzeczy:
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
 
 
+[5]: http://learnxinyminutes.com/docs/ruby/
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 [2]: http://rvm.io/rvm
 [3]: http://pragprog.com/book/achbd/the-rspec-book
