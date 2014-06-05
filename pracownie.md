@@ -21,7 +21,7 @@
 5\. (9 godz.)
   *Agile Programming* – podział na zespoły 2-3 osobowe.
 
-  - *Test First* czy *Test Last*
+  - *Test First* czy *Test Last*?
   - TDD (*Test Driven Development*) w przykładach.
 
 6\. (12 godz.)
