@@ -179,22 +179,25 @@ Dokumentacja (Ruby StdLib):
 
 1\. Jakaś definicja testowania.
 
-Testowanie to proces który ma na celu weryfikację oraz walidację oprogramowania.
-Weryfikacja oprogramowania ma na celu sprawdzenie, czy wytwarzane oprogramowanie jest zgodne ze specyfikacją.
-Walidacja sprawdza, czy oprogramowanie jest zgodne z oczekiwaniami użytkownika.
-
-Wymienić używane frameworki do testowania.
-Dopisać mocne i słabe strony framweworków.
+Testowanie to proces który ma na celu weryfikację oraz walidację
+oprogramowania. Weryfikacja oprogramowania ma na celu sprawdzenie,
+czy wytwarzane oprogramowanie jest zgodne ze specyfikacją. Walidacja
+sprawdza, czy oprogramowanie jest zgodne z oczekiwaniami użytkownika.
 
 W środowisku ruby napupularniejsze framweworki do testowania:
 
 - RSpec - https://github.com/rspec
 - Minitest - https://github.com/seattlerb/minitest
 
-Minitest jest dostępny w Ruby od wersji 1.9. Dużo ,,prostszy'' niż rspec. Jednak zapewnia wszystkie elementy potrzebne do testowania: unit, spec, mock, benchmark
-RSpec - najpopularniejszy, kompletny system do testowania kodu w Ruby.
+Minitest jest dostępny w Ruby od wersji 1.9. Dużo ,,prostszy'' niż
+RSpec. Jednak zapewnia wszystkie elementy potrzebne do testowania:
+unit, spec, mock, benchmark. RSpec - najpopularniejszy, kompletny
+system do testowania kodu w Ruby.
 
-Nie można wskazać lepszego czy gorszego, to bardziej kwestia składni i narzędzi. Minitest często wykorzystywany do testowania gemów by nie zwiększać ich zależnosci.
+Nie można wskazać lepszego czy gorszego, to bardziej kwestia składni
+i narzędzi. Minitest często wykorzystywany do testowania gemów by nie
+zwiększać ich zależnosci.
+
 
 2\. RSpec
 
