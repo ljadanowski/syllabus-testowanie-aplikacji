@@ -13,10 +13,10 @@
   Tworzenie prostych skryptów w języku Ruby.
 
 3\. (6 godz.)
-  Dopisywanie brakującego kodu do nieprzechodzących testów.
-
-4\. (6 godz.)
   Dopisywanie testów do niepokrytego nimi kodu.
+  
+4\. (6 godz.)
+  Dopisywanie brakującego kodu do nieprzechodzących testów.
 
 5\. (9 godz.)
   *Agile Programming* – podział na zespoły 2-3 osobowe.
