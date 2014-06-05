@@ -914,6 +914,6 @@ movie2.price = RegularPrice.new
 Poprzednio nie było to możliwe!
 
 
-#### TODO: Wykład 7. Praca z *Legacy Code*
+#### TODO: Wykład 8. Praca z *Legacy Code*
 
 TODO.
