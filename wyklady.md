@@ -428,12 +428,11 @@ móc go przetestować w izolacji i we wszystkich możliwych przypadkach.
 
 9\. Jak testowany jest kod Ruby Core i Std-lib.
 
-Jako przykłady dobrego testowania i kodu pokazał bym proejkty
-zgromadzowne w tej bazie:
+Przykładami dobrego testowania i kodu są projekty zgromadzowne w tej bazie:
 
     http://microrb.com
 
-Jest tam dużo micro projektów – małych bibliotek, otestowanych
+Jest tam dużo micro projektów – małych bibliotek, przetestowanych
 i napisanych profesjonalnie.
 
 Ruby Core: https://github.com/ruby/ruby/tree/trunk/test/ruby
@@ -445,7 +444,6 @@ Ruby Std-lib:
 
 - Date, DateTime, Time: https://github.com/rubysl/rubysl-date/tree/2.0/spec
 - StringScanner: https://github.com/rubysl/rubysl-strscan/tree/2.0/spec
-
 
 
 #### Wykład 5. Refaktoryzacja kodu
