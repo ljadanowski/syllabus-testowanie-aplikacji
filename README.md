@@ -1,6 +1,6 @@
 ## Testowanie aplikacji w Ruby
 
-### Wykład (15 godz.)
+![refactoring](images/refactoring.jpg)
 
 1. Powtórka z języka Ruby.
    - [Learn X in Y minutes][5], where X=Ruby.
@@ -16,29 +16,6 @@
    - [simplecov][8]
 8. Doubles, mocks i stubs.
 9. Praca z *Legacy Code* (zastanym kodem, kodem niepokrytym testami).
-
-
-![refactoring](images/refactoring.jpg)
-
-### Laboratorium (45 godz.)
-
-1. Przygotowanie środowiska do pracy z językiem Ruby: Git, [RVM][2],
-  integracja z usługami na GitHub – Travis, Code Climate, Coveralls.
-2. Proste skrypty w języku Ruby.
-3. Dopisywanie brakującego kodu do nieprzechodzących testów.
-4. Dopisywanie testów do niepokrytego nimi kodu.
-5. TDD w przykładach (*Test Driven Development*).
-6. Własny projekt do napisania z wykorzystaniem TDD lub
-   dowolny projekt z [GitHub](github.com) do którego dopisano
-   testy (i kod) zaakceptowane przez właściela projektu.
-
-Testing Puzzles:
-
-* [Puzzle Node](http://www.puzzlenode.com/)
-
-Refactoring:
-
-* [Refactoring Notes](http://ghendry.net/refactor.html)
 
 
 ### Literatura
@@ -61,17 +38,16 @@ Język Ruby:
    [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
 4. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide
 
-Testowanie aplikacji:
-
-1. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
-  Code School.
-
 Różne rzeczy:
-
 * Arne Brasseur.
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
+Testing Puzzles:
+* [Puzzle Node](http://www.puzzlenode.com/)
+Refactoring:
+* [Refactoring Notes](http://ghendry.net/refactor.html)
 
 
+[5]: http://learnxinyminutes.com/docs/ruby/
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 [2]: http://rvm.io/rvm
 [3]: http://pragprog.com/book/achbd/the-rspec-book
