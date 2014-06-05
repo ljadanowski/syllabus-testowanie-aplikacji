@@ -224,6 +224,7 @@ group :development do
   gem 'rspec'
   gem 'factory_girl'
 end
+```
 
 Plik *spec_helper.rb*:
 ```ruby
