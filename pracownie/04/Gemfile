@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rspec', '~> 3.0.0.beta'
+gem 'rspec', '~> 3.0.0'
 
 gem 'simplecov', '~> 0.7.1', require: false #, group: :test
 

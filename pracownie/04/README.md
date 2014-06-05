@@ -1,3 +1,39 @@
+## 2 metody
+
+1\. Napisać metodę, która posortuje elementy według liczby
+powtórzeń, zaczynając od wartości powtarzających się najrzadziej.
+Metodę nazwać `sort_by_freq` i dodać ją do modułu Enumerable:
+
+```ruby
+module Enumerable
+  def sort_by_freq
+    # ... dopisać brakujący kod
+  end
+end
+puts [1,2,3,4,1,2,4,8,1,4,9,16].sort_by_freq.join(", ")
+# 3, 8, 9, 16, 2, 2, 1, 1, 1, 4, 4, 4
+```
+
+Zacząć od napisania testów w pliku *spec/part1_spec.rb*.
+
+
+2\. Dla dużych tablic zwierających stosunkowo niewiele różnych
+obiektów wyliczyć histogram obrazujący częstotliwość
+występowań danego obiektu. Metodę nazwać `to_hist`
+i dodać ją do modułu Enumerable:
+
+```ruby
+module Enumerable
+  def to_hist
+    # ... dopisać brakujący kod
+  end
+end
+# [1, 3, 3, 4, 4, 4].to_hist #=> {1=>1, 3=>2, 4=>3}
+```
+
+Zacząć od napisania testów w pliku *spec/part2_spec.rb*.
+
+
 ## Dokumentacja do RSpec
 
 [RSpec documentation](http://rspec.info/):
