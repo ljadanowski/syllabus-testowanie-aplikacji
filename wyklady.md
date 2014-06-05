@@ -177,9 +177,7 @@ Dokumentacja (Ruby StdLib):
 
 #### Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
-1\. Jakaś definicja testowania.
-
-Testowanie to proces który ma na celu weryfikację oraz walidację
+1\. Testowanie to proces który ma na celu weryfikację oraz walidację
 oprogramowania. Weryfikacja oprogramowania ma na celu sprawdzenie,
 czy wytwarzane oprogramowanie jest zgodne ze specyfikacją. Walidacja
 sprawdza, czy oprogramowanie jest zgodne z oczekiwaniami użytkownika.
@@ -199,11 +197,8 @@ i narzędzi. Minitest często wykorzystywany do testowania gemów by nie
 zwiększać ich zależnosci.
 
 
-2\. RSpec
+2\. Plik *Gemfile* dla RSpec
 
-- Gemfile dla RSpec
-
-*Gemfile*:
 ```ruby
 group :development do
   gem 'rspec'
@@ -217,26 +212,27 @@ bundle exec rspec
 
 3\. Korzystamy z gemów Capybara i Factory Girl.
 
-TODO: Gemfile, po przykładzie dla każdego z gemów.
+Factory girl is a fixtures replacement with a straightforward
+definition syntax, support for multiple build strategies (saved
+instances, unsaved instances, attribute hashes, and stubbed objects),
+and support for multiple factories for the same class
+(user, admin_user, and so on), including factory inheritance.
 
-Factory girl is a fixtures replacement with a straightforward definition syntax,
-support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects),
-and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
-
-*Gemfile*:
+Plik *Gemfile*:
 ```ruby
 group :development do
   gem 'rspec'
   gem 'factory_girl'
 end
 
-*spec_helper.rb*
+Plik *spec_helper.rb*:
 ```ruby
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
 end
 ```
 
+Przykład:
 ```ruby
 # This will guess the User class
 FactoryGirl.define do
@@ -245,7 +241,6 @@ FactoryGirl.define do
     last_name  "Doe"
     admin false
   end
-
   # This will use the User class (Admin would have been guessed)
   factory :admin, class: User do
     first_name "Admin"
@@ -255,7 +250,8 @@ FactoryGirl.define do
 end
 ```
 
-Capybara helps you test web applications by simulating how a real user would interact with your app.
+Capybara helps you test web applications by simulating how a real user
+would interact with your app:
 
 *Gemfile*:
 ```ruby
