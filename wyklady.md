@@ -330,16 +330,21 @@ end
 * Natychmiastowy feedback.
 * Wyraźna lokalizacja błędu.
 * Lepszy kod – (mniejsze metody, zgodne z filozofia Unix. Robiące tylko jedną rzecz.
-                Z wyraźnymi granicami (unikamy stanów globalnych, przekazujemy stan do metody)
+  Z wyraźnymi granicami (unikamy stanów globalnych, przekazujemy stan do metody)
 
-3\. Automatyzacja z pomocą RSpec, Guard
+3\. Automatyzacja z pomocą RSpec i Guard
 
-Najprostsze testowanie robi każdy, nawet o tym nie wiedząc. Kiedy sprawdzamy ręcznie napisany kod, czy to w konsoli czy przegladarce.
-Taka forma jest nieoptymalna (zabiera dużo czasu, oraz element ludzki (znudzeni omijamy sprawdzenie wszytskiego za każdym razem).
-Automatyzacja pozwala napisać serie skryptów (testów) które manualne sprawdzanie automatyzują.
+Najprostsze testowanie robi każdy, nawet o tym nie wiedząc. Kiedy
+sprawdzamy ręcznie napisany kod, czy to w konsoli czy przegladarce.
 
-Guard pozawala zrezygnować z ostatniej manualnej czynności, czyli każdorazowego uruchamiania testów ręcznie.
-Obserwuje pliki nad którymi pracujemy i automatycznie uruchamia powiązane z nimi testy.
+Taka forma jest nieoptymalna (zabiera dużo czasu, oraz element ludzki
+(znudzeni omijamy sprawdzenie wszytskiego za każdym razem).
+Automatyzacja pozwala napisać serie skryptów (testów) które manualne
+sprawdzanie automatyzują.
+
+Guard pozawala zrezygnować z ostatniej manualnej czynności, czyli
+każdorazowego uruchamiania testów ręcznie.  Obserwuje pliki nad
+którymi pracujemy i automatycznie uruchamia powiązane z nimi testy.
 
 *Gemfile*:
 ```ruby
