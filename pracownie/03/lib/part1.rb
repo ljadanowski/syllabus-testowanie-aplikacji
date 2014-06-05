@@ -1,4 +1,4 @@
-# Good place to show how easy is monkey patching in Ruby
+# Good place to show how easy is monkey patching in Ruby.
 # Show students that they can extend Array class by sum method.
 #
 # class Array
@@ -28,6 +28,3 @@ def sum_to_n? arr, n
     sum(pair) == n
   end
 end
-
-# TODO: add additional tests to check methods
-#   specification from README.md
