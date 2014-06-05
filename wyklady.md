@@ -366,23 +366,22 @@ bundle exec guard
 
 4\. Testujemy: test-first czy test-last?
 
-Nie ma jednej prawdziwej odpowiedzi na pytanie czy powinno sie pierw
-pisać kod, czy testy.  Każde z podejść ma swoje plusy i minusy.
+    Nie ma jednej właściwej odpowiedzi na to pytanie.
+    Każde z podejść ma swoje plusy i minusy.
 
-Test first z góry daje nam 100% pokrycie testami (Każdy kod jaki
-dodajemy do aplikacji poprzedzony jest napisanymi do niego testami).
+Test first – daje nam 100% pokrycie testami. (Każdy kod jaki dodajemy
+do aplikacji poprzedzony jest napisanymi do niego testami.)
+Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo
+mniej integracyjnych. Dodawane by sprawdzić połączenia między unitami.
 
-Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo mniej
-integracyjnych. Dodawane by sprawdzić połączenia między unitami.
-
-Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu
-który nie dokońca rozumiemy. Zajmuje też stusunkowo więcej czasu, ale
-kod otrzymany na końcu jest zazwyczaj lepszy.
+Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu,
+który nie do końca rozumiemy. Pisanie zajmuje więcej czasu,
+ale kod otrzymany na końcu jest zazwyczaj lepszy.
 
 Najlepszą odpowiedzią na pytanie czy test-first czy tez test-last jest
 zrozumienie problemu. Jeśli doskonale wiemy co nasz kod ma robić.
-Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później. W
-przeciwnym wypadku najlepiej sprawdza się drugie podejście.
+Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później.
+W przeciwnym wypadku, najlepiej sprawdza się drugie podejście.
 
 
 6\. Piszemy kod: top-down czy bottom-up?
