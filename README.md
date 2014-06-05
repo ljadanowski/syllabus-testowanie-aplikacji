@@ -38,11 +38,6 @@ Język Ruby:
    [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
 4. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide
 
-Testowanie aplikacji:
-
-1. [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies) –
-  Code School.
-
 Różne rzeczy:
 * Arne Brasseur.
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
@@ -50,7 +45,7 @@ Testing Puzzles:
 * [Puzzle Node](http://www.puzzlenode.com/)
 Refactoring:
 * [Refactoring Notes](http://ghendry.net/refactor.html)
-* 
+
 
 [5]: http://learnxinyminutes.com/docs/ruby/
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
