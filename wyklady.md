@@ -338,15 +338,15 @@ end
 3\. Automatyzacja z pomocą RSpec i Guard
 
 Najprostsze testowanie robi każdy, nawet o tym nie wiedząc. Kiedy
-sprawdzamy ręcznie napisany kod, czy to w konsoli czy przegladarce.
+sprawdzamy ręcznie napisany kod, czy to w konsoli czy przeglądarce.
 
-Taka forma jest nieoptymalna (zabiera dużo czasu, oraz element ludzki
-(znudzeni omijamy sprawdzenie wszytskiego za każdym razem).
-Automatyzacja pozwala napisać serie skryptów (testów) które manualne
-sprawdzanie automatyzują.
+Taka forma jest nieoptymalna, zabiera dużo czasu –
+znudzeni omijamy sprawdzenie wszystkiego za każdym razem.
+Automatyzacja pozwala napisać serie skryptów (testów)
+które manualne sprawdzanie automatyzują.
 
 Guard pozawala zrezygnować z ostatniej manualnej czynności, czyli
-każdorazowego uruchamiania testów ręcznie.  Obserwuje pliki nad
+każdorazowego uruchamiania testów ręcznie. Obserwuje on pliki nad
 którymi pracujemy i automatycznie uruchamia powiązane z nimi testy.
 
 *Gemfile*:
