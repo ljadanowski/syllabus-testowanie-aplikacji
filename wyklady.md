@@ -325,12 +325,15 @@ describe Array do
 end
 ```
 
-2\. Po co piszemy testy jednostkowe
+2\. Po co piszemy testy jednostkowe?
 
 * Natychmiastowy feedback.
 * Wyraźna lokalizacja błędu.
-* Lepszy kod – (mniejsze metody, zgodne z filozofia Unix. Robiące tylko jedną rzecz.
-  Z wyraźnymi granicami (unikamy stanów globalnych, przekazujemy stan do metody)
+* Lepszy kod – mniejsze metody, zgodne z filozofia Unix
+  (robiące tylko jedną rzecz).
+  Z wyraźnymi granicami –
+  unikamy stanów globalnych, przekazujemy stan do metody.
+
 
 3\. Automatyzacja z pomocą RSpec i Guard
 
