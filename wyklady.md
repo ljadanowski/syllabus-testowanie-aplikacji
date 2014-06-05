@@ -113,7 +113,7 @@ Więcej informacji:
 - http://ozmm.org/posts/argf.html
 
 
-#### TODO: Wykład 2. Podstawowe klasy i moduły
+#### Wykład 2. Podstawowe klasy i moduły
 
 1\. Klasa *Array*
 
