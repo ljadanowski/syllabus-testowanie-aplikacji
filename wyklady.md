@@ -386,11 +386,12 @@ W przeciwnym wypadku, najlepiej sprawdza się drugie podejście.
 
 6\. Piszemy kod: top-down czy bottom-up?
 
-Zazwyczaj to od nas nie zależy. Top-down jest spotykany zazwyczaj w
-dużych projektach, zespołach (korporacjach), gdzie inni ludzie
-projektują system, a inni go piszą. Developer wtedy zazwyczaj dostaje
-do napisania konkretny kawałek systemu, który został zaprojektowany
-przez kogoś innego.
+Zazwyczaj ta decyzja nie od nas zależy.
+
+Top-down jest spotykany zazwyczaj w dużych projektach, zespołach
+(korporacjach), gdzie inni ludzie projektują system, a inni go
+piszą. Developer wtedy zazwyczaj dostaje do napisania konkretny
+kawałek systemu, który został zaprojektowany przez kogoś innego.
 
 Bottom-up, występuje w sytuacji gdy z małych części systemu budujemy
 złożony produkt. Często na początku nie znając dokładnego kształtu
