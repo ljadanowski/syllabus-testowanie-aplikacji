@@ -701,15 +701,12 @@ W Ruby testy piszemy w oddzielnych klasach.
 Tak jest w przypadku frameworków RSpec i Test::Unit
 
 
-#### TODO: Wykład 7. Praca z *Legacy Code*
+#### Wykład 7. Refaktoryzacja Legacy Code
 
-Czyli praca z już istniejącym kodem lub kodem nie pokrytym testami
-(Michael Feathers).
+1\. Legacy Code to już istniejący kod
+lub kod nie pokryty testami (Michael Feathers).
 
-
-#### Wykład 8. Refaktoryzacja Legacy Code
-
-1\. Zaawansowane techniki refaktoryzacji kodu.
+Zaawansowane techniki refaktoryzacji kodu.
 
 Plik: wyklady/7/06-wypozyczalnia.rb
 
@@ -898,6 +895,7 @@ class Movie
 Usuwamy `case` z `price_code=`.
 
 Jak?
+
 Plik: wyklady/7/12-wypozyczalnia.rb
 
 Podmieniamy przykład użycia:
@@ -914,3 +912,8 @@ movie2.price = RegularPrice.new
 ```
 
 Poprzednio nie było to możliwe!
+
+
+#### TODO: Wykład 7. Praca z *Legacy Code*
+
+TODO.
