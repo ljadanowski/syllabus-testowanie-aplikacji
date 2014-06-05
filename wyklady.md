@@ -260,8 +260,9 @@ group :development do
   gem 'rspec'
   gem 'capybara'
 end
+```
 
-require 'capybara/rspec' inside test (or spec_helper)
+Dopisujemy require 'capybara/rspec' inside test (or spec_helper):
 
 ```ruby
 describe "the signin process", :type => :feature do
@@ -288,6 +289,7 @@ end
 - guard
 - simplecov
 - continous integration – Travis
+
 
 #### Wykład 4. Testy jednostkowe
 
