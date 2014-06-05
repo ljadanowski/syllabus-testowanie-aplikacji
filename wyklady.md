@@ -175,16 +175,28 @@ Dokumentacja (Ruby StdLib):
 - http://www.ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/DateTime.html
 
 
-#### TODO: Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
-
-TODO: 4–5 slajdów.
+#### Wykład 3. Ogólnie o testowaniu, dostępne narzędzia i technologie
 
 1\. Jakaś definicja testowania.
+
+Testowanie to proces który ma na celu weryfikację oraz walidację oprogramowania.
+Weryfikacja oprogramowania ma na celu sprawdzenie, czy wytwarzane oprogramowanie jest zgodne ze specyfikacją.
+Walidacja sprawdza, czy oprogramowanie jest zgodne z oczekiwaniami użytkownika.
 
 Wymienić używane frameworki do testowania.
 Dopisać mocne i słabe strony framweworków.
 
-2\. Dlaczego korzystamy z frameworka RSpec?
+W środowisku ruby napupularniejsze framweworki do testowania:
+
+- RSpec - https://github.com/rspec
+- Minitest - https://github.com/seattlerb/minitest
+
+Minitest jest dostępny w Ruby od wersji 1.9. Dużo ,,prostszy'' niż rspec. Jednak zapewnia wszystkie elementy potrzebne do testowania: unit, spec, mock, benchmark
+RSpec - najpopularniejszy, kompletny system do testowania kodu w Ruby.
+
+Nie można wskazać lepszego czy gorszego, to bardziej kwestia składni i narzędzi. Minitest często wykorzystywany do testowania gemów by nie zwiększać ich zależnosci.
+
+2\. RSpec
 
 - Gemfile dla RSpec
 
@@ -194,69 +206,176 @@ group :development do
   gem 'rspec'
 end
 ```
-Uruchamiamy *RSpec* w trybie development:
+Uruchamiamy *RSpec*:
 
 ```sh
-TODO: jak?
+bundle exec rspec
 ```
 
 3\. Korzystamy z gemów Capybara i Factory Girl.
 
 TODO: Gemfile, po przykładzie dla każdego z gemów.
 
+Factory girl is a fixtures replacement with a straightforward definition syntax,
+support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects),
+and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
+
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+  gem 'factory_girl'
+end
+
+*spec_helper.rb*
+```ruby
+RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
+end
+```
+
+```ruby
+# This will guess the User class
+FactoryGirl.define do
+  factory :user do
+    first_name "John"
+    last_name  "Doe"
+    admin false
+  end
+
+  # This will use the User class (Admin would have been guessed)
+  factory :admin, class: User do
+    first_name "Admin"
+    last_name  "User"
+    admin      true
+  end
+end
+```
+
+Capybara helps you test web applications by simulating how a real user would interact with your app.
+
+*Gemfile*:
+```ruby
+group :development do
+  gem 'rspec'
+  gem 'capybara'
+end
+
+require 'capybara/rspec' inside test (or spec_helper)
+
+```ruby
+describe "the signin process", :type => :feature do
+  before :each do
+    User.make(:email => 'user@example.com', :password => 'caplin')
+  end
+
+  it "signs me in" do
+    visit '/sessions/new'
+    within("#session") do
+      fill_in 'Login', :with => 'user@example.com'
+      fill_in 'Password', :with => 'password'
+    end
+    click_link 'Sign in'
+    expect(page).to have_content 'Success'
+  end
+end
+```
 
 4\. Dostępne narzędzia
 
-- Ruby Version Manager (RVM),
-- Konfiguracja edytora (Atom/Emacs) do pracy z frameworkami
+- Ruby Version Manager (RVM), rbenv
+- Konfiguracja edytora (Atom/Emacs/Vi) do pracy z frameworkami
+- guard
+- simplecov
+- continous integration – Travis
 
-– ... TODO: jeszcze coś?
-
-
-5\. Technologie jakie?
-
-- continous integration – Travis?
-- ...
-
-
-#### TODO: Wykład 4. Testy jednostkowe
+#### Wykład 4. Testy jednostkowe
 
 Testy jednostkowe – co to jest?
 
 Zautomatyzowany test pisany przez programistę
 testujący pojedyńczy element systemu w izolacji.
 
-TODO: kod – 2–3 przykłady testów, tak aby było widać izolację.
+```ruby
+class Array
+  def sum
+    reduce(0,:+)
+  end
+end
+
+describe Array do
+  describe '#sum' do
+    it 'returns 0 for empty array' do
+      expect( [].sum ).to eq(0)
+    end
+
+    it 'returns proper sum of all elements' do
+      expect( [1, 2, 3, 4, 5].sum ).to eq(15)
+    end
+
+    it 'raise error if array include non numeral values' do
+      expect{
+        [1, 2, 3, 4, 5].sum
+      }.to raise_error
+    end
+  end
+end
+```
 
 2\. Po co piszemy testy jednostkowe
 
 * Natychmiastowy feedback.
 * Wyraźna lokalizacja błędu.
-* Lepszy kod – TODO: wyjaśnić w jakim sensie.
+* Lepszy kod – (mniejsze metody, zgodne z filozofia Unix. Robiące tylko jedną rzecz.
+                Z wyraźnymi granicami (unikamy stanów globalnych, przekazujemy stan do metody)
 
 3\. Automatyzacja z pomocą RSpec, Guard
 
-Co automatyzujemy: TODO – dopisać.
+Najprostsze testowanie robi każdy, nawet o tym nie wiedząc. Kiedy sprawdzamy ręcznie napisany kod, czy to w konsoli czy przegladarce.
+Taka forma jest nieoptymalna (zabiera dużo czasu, oraz element ludzki (znudzeni omijamy sprawdzenie wszytskiego za każdym razem).
+Automatyzacja pozwala napisać serie skryptów (testów) które manualne sprawdzanie automatyzują.
+
+Guard pozawala zrezygnować z ostatniej manualnej czynności, czyli każdorazowego uruchamiania testów ręcznie.
+Obserwuje pliki nad którymi pracujemy i automatycznie uruchamia powiązane z nimi testy.
 
 *Gemfile*:
 ```ruby
 group :development do
   gem 'rspec'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'guard-rspec', require: false
 end
 ```
 
 Bash:
 ```sh
 bundle install
+bundle exec guard init rspec
+bundle exec guard
 ```
 
 4\. Testujemy: test-first czy test-last?
 
-TODO: napisać kiedy test-first czy test-last.
+Nie ma jednej prawdziwej odpowiedzi na pytanie czy powinno sie pierw pisać kod, czy testy.
+Każde z podejść ma swoje plusy i minusy.
+
+Test first z góry daje nam 100% pokrycie testami (Każdy kod jaki dodajemy do aplikacji poprzedzony jest napisanymi do niego testami).
+Pojawia się dużo testów niskopoziomowych (unitów), stosunkowo mniej integracyjnych. Dodawane by sprawdzić połączenia między unitami.
+Przeciwnicy najbardziej zwracają uwagę na to, że piszemy testy do kodu który nie dokońca rozumiemy. Zajmuje też stusunkowo więcej czasu,
+ale kod otrzymany na końcu jest zazwyczaj lepszy.
+
+Najlepszą odpowiedzią na pytanie czy test-first czy tez test-last jest zrozumienie problemu. Jeśli doskonale wiemy co nasz kod ma robić.
+Rozumiemy go, to najlepiej zacząc od testów, dodajać kod później. W przeciwnym wypadku najlepiej sprawdza się drugie podejście.
 
 Piszemy kod: top-down czy bottom-up?
+
+Zazwyczaj to od nas nie zależy. Top-down jest spotykany zazwyczaj w dużych projektach, zespołach (korporacjach), gdzie inni ludzie projektują system,
+a inni go piszą. Developer wtedy zazwyczaj dostaje do napisania konkretny kawałek systemu, który został zaprojektowany przez kogoś innego.
+
+Bottom-up, występuje w sytuacji gdy z małych części systemu budujemy złożony produkt. Często na początku nie znając dokładnego kształtu systemu.
+Z małych klocków budujemy złożone systemy
+
+https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design
+
 
 Mantra Test Driven Development (TDD):
 
@@ -271,19 +390,21 @@ i co traktować jako „unit” ewoluują.
 
 Kiedy zmieniamy kod, musimy zmienić też testy.
 
-
-5\. Izolacja – TODO: jakich elementów
+5\. Izolacja
 
 Jak osiągamy izolację:
 
-* Dzielimy kod na pliki
-* Korzystamy z baz danych, gemów…
+* Wyznaczamy wyraźne granice między elementami systemu
+* Nie korzystamy z zewnęrzych części aplikacji czy systemu: baza danych, system plików, ...
 
-TODO: Dla mnie niejasne.
-Czy można to co powyżej odrobinkę uszczegółowić?
-
+Każda część (unit) w aplikacji powinien wykonywać jedną rzecz, powinien być oddzielony od reszty systemu wyraźną granicą.
+Powinien mieć ustawiony stan na wejściu operować na nim i usawiać stan wyjściowy. Ten stan wejściowy mockujemy (sztucznie go ustawiamy),
+by móc go przetestować w izolacji i we wszystkich możliwych przypadkach.
 
 6\. Jak testowany jest kod Ruby Core i Std-lib.
+
+Jako przykłady dobrego testowania i kodu pokazał bym proejkty zgromadzowne w tej bazie: http://microrb.com
+Jest tam dużo micro projektów (małych bibliotek, otestowanych i napisanych bardzo profesjonalnie)
 
 Ruby Core: https://github.com/ruby/ruby/tree/trunk/test/ruby
 
