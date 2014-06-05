@@ -1,4 +1,4 @@
-### Sylabus
+### Wykład
 ##  Testowanie aplikacji w Ruby
 
 1. Wprowadzenie do języka Ruby.
