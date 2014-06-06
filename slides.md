@@ -651,14 +651,20 @@ Co to jest *bad smells in code* (w literaturze spotyka się też określenie *sm
 
 #### Wykład 6. Obiekty *doubles*
 
-Zwane też *mockami* lub *stubami*.
+1\. Doubles, zwane też *mockami* lub *stubami*
 
-Kod który piszemy zazwyczaj nie ma wyraźnych granic i często wydzielić z niego pojedyńcze jednostki nie zależne od innych części systemu.
-By to osiągnąc posługujemy się doubles, by podmienić części systemu na ,,sztuczny kod''
+Kod który piszemy zazwyczaj nie ma wyraźnych granic i często wydzielić
+z niego pojedyńcze jednostki nie zależne od innych części systemu.  By
+to osiągnąc posługujemy się doubles, by podmienić części systemu na
+„sztuczny kod”.
 
-1\. Kiedy ich używamy:
+2\. Kiedy ich używamy:
 
-In a unit test, mock objects can simulate the behavior of complex, real objects and are therefore useful when a real object is impractical or impossible to incorporate into a unit test. If an actual object has any of the following characteristics, it may be useful to use a mock object in its place.
+In a unit test, mock objects can simulate the behavior of complex,
+real objects and are therefore useful when a real object is
+impractical or impossible to incorporate into a unit test. If an
+actual object has any of the following characteristics, it may be
+useful to use a mock object in its place.
 
 If the real object:
 
@@ -666,11 +672,18 @@ If the real object:
 - has states that are difficult to create or reproduce (e.g., a network error);
 - is slow (e.g., a complete database, which would have to be initialized before the test);
 - does not yet exist or may change behavior;
-- would have to include information and methods exclusively for testing purposes (and not for its actual task).
+- would have to include information and methods exclusively for
+  testing purposes (and not for its actual task).
 
-For example, an alarm clock program which causes a bell to ring at a certain time might get the current time from the outside world. To test this, the test must wait until the alarm time to know whether it has rung the bell correctly. If a mock object is used in place of the real object, it can be programmed to provide the bell-ringing time (whether it is actually that time or not) so that the alarm clock program can be tested in isolation.
+For example, an alarm clock program which causes a bell to ring at a
+certain time might get the current time from the outside world. To
+test this, the test must wait until the alarm time to know whether it
+has rung the bell correctly. If a mock object is used in place of the
+real object, it can be programmed to provide the bell-ringing time
+(whether it is actually that time or not) so that the alarm clock
+program can be tested in isolation.
 
-https://en.wikipedia.org/wiki/Mock_object
+    https://en.wikipedia.org/wiki/Mock_object
 
 2\. Prawo Demeter –
 zasada minimalnej wiedzy lub Reguła ograniczania interakcji.
@@ -687,26 +700,40 @@ może odwoływać się jedynie do metod należących do:
 
 3\. stub, mock, fake?
 
-Stub – obiekt zawierający informację o stanie końcowym, pożądanym lub faktycznym
-Mock – obiekt zawierający informacje o zachowaniu, sposobie dotarcia do tego stanu końcowego
-Fake – klasa zawierająca metody, które zwracają ściśle określone wartości, np. wpisane na sztywno w kod klasy
+Stub – obiekt zawierający informację o stanie końcowym, pożądanym lub
+faktycznym
 
-innymi słowy:
+Mock – obiekt zawierający informacje o zachowaniu, sposobie dotarcia
+do tego stanu końcowego
+
+Fake – klasa zawierająca metody, które zwracają ściśle określone
+wartości, np. wpisane na sztywno w kod klasy
+
+Innymi słowy:
 
 - Stub umożliwia testowanie stanu
 - Mock umożliwia testowanie zachowania
 
-http://martinfowler.com/articles/mocksArentStubs.html
+    http://martinfowler.com/articles/mocksArentStubs.html
 
 4\. Testy integracyjne
 
-Testy jednostkowe, testuja pojedyńcze unity (jednostki), testując je w ilozacji nie wiemy czy między sobą działają dobrze.
-Testy integracyjne testują właśnie te połączenia między unitami. Zbierają kilka części systemu i sprawdzają interakcje między nimi.
+Testy jednostkowe, testują pojedyńcze unity (jednostki), testując je w
+izolacji nie wiemy czy między sobą działają dobrze.
 
-5\. Testy widoku, żadania
+Testy integracyjne testują właśnie te połączenia między
+unitami. Zbierają kilka części systemu i sprawdzają interakcje między
+nimi.
 
-Testy symulujące prawdziwe zachowanie użytownika. Symulują jego zachowanie, nie testują kodu jako takiego a zewnętrzny interfejs i jego zachowanie.
-Przykładowym frameworkiem do pisania takich testów w środowisku ruby jest capybara.
+5\. Testy widoku, żądania
+
+Testy symulujące prawdziwe zachowanie użytownika. Symulują jego
+zachowanie, nie testują kodu jako takiego a zewnętrzny interfejs
+i jego zachowanie.
+
+Frameworkiem do pisania takich testów w środowisku Ruby
+jest Capybara.
+
 
 #### Wykład 7. Refaktoryzacja Legacy Code
 
@@ -923,26 +950,50 @@ Poprzednio nie było to możliwe!
 
 #### Wykład 8. Praca z *Legacy Code*
 
-Legacy code definiowany jest różnie. Zazwyczaj jako ,,zastany kod''. Kod który napisał ktoś inny (którego nie jesteśmy autorami) a z którym musimy pracować.
-Znaczy to że nie mamy pełnej wiedzy jak dokładnie każdy element systemu działa i nie czujemy się komfortowo by go rozszerzać i zmieniać.
+1\. Legacy Code?
 
-Michael Feathers, autor Working Effectively with Legacy Code, idzie krok dalej i definiuje ,,Legacy code'' jako kodu nie pokrytego testami. Nie jest ważne kto jest autorem kodu,
-nawet jeśli sami go napisaliśmy, a on się rozrasta i komplikuje, po pewnym czasie tracimy pewność siebie jeśli mamy coś w nim zmienić lub go rozszerzyć.
+Legacy Code definiowany jest różnie. Zazwyczaj jako ,,zastany
+kod''. Kod który napisał ktoś inny (którego nie jesteśmy autorami) a z
+którym musimy pracować.  Znaczy to że nie mamy pełnej wiedzy jak
+dokładnie każdy element systemu działa i nie czujemy się komfortowo by
+go rozszerzać i zmieniać.
 
-Testy, o których się uczymy, dają nam pewność, że jakakolwiek zmiana dokonana w systemie nie spowoduje, że przestanie on działać.
+Michael Feathers, autor Working Effectively with Legacy Code, idzie
+krok dalej i definiuje ,,Legacy code'' jako kodu nie pokrytego
+testami. Nie jest ważne kto jest autorem kodu, nawet jeśli sami go
+napisaliśmy, a on się rozrasta i komplikuje, po pewnym czasie tracimy
+pewność siebie jeśli mamy coś w nim zmienić lub go rozszerzyć.
 
-Jak sobie radzić z Legacy code?
+Testy, o których się uczymy, dają nam pewność, że jakakolwiek zmiana
+dokonana w systemie nie spowoduje, że przestanie on działać.
 
-Każdy w pewnym momencie swojej kariery programistycznej, spotyka się z sytuacją w której zostajemy zmuszeni do pracy z Legacy code.
-Ktoś z zespołu odszedł i trzeba przejąć jego kod. Zostaliśmy wynajęci by dopisać do istniejącej apliakcji nową funkcjonalność ...
-Jak sobie z taką sytuacją poradzić. Zazwyczaj będziemy bali się cokolwiek zmieniać, będziemy ograniczać naszą interakcje w kodzie do minimum, by ,,nic nie zepsuć''.
-Nie jest to dobre podejście. Jak wcześniej zostało już powiedziany powinniśmy taki kod pokryć testami, by zyskać pewność że działa tak jak powinien, przed i po zmianach
 
-Powinniśmy zacząć od testów integracyjnych, wysokiego poziomu, które w sposób ogólny opiszą działanie systemu, i powoli ,,schodzić'' niżej dodając testy jednostkowe, które pomogą nam refaktoryzować kod.
+2\. Jak sobie radzić z Legacy code?
 
-Kiedy będziemy mieli już kod pokryty testami, możemy przejść do refaktoryzacji kodu (rozbić duże metody, wyeksportować wspólne kawałki kodu, dodać wyraźne granice, ...,
-oraz przejść do dodawania nowych funkcjonalności.
+Każdy w pewnym momencie swojej kariery programistycznej, spotyka się z
+sytuacją w której zostajemy zmuszeni do pracy z Legacy code.  Ktoś z
+zespołu odszedł i trzeba przejąć jego kod. Zostaliśmy wynajęci by
+dopisać do istniejącej apliakcji nową funkcjonalność ...  Jak sobie z
+taką sytuacją poradzić. Zazwyczaj będziemy bali się cokolwiek
+zmieniać, będziemy ograniczać naszą interakcje w kodzie do minimum, by
+,,nic nie zepsuć''.  Nie jest to dobre podejście. Jak wcześniej
+zostało już powiedziany powinniśmy taki kod pokryć testami, by zyskać
+pewność że działa tak jak powinien, przed i po zmianach
 
-Początek może być trudny, ale następnym razem jeśli my lub ktoś inny będzie musiał pracować przy tym kodzie, będzie miał już otestowany kod i będzie mógł od razu przejść do pracy nad nim.
+Powinniśmy zacząć od testów integracyjnych, wysokiego poziomu, które w
+sposób ogólny opiszą działanie systemu, i powoli ,,schodzić'' niżej
+dodając testy jednostkowe, które pomogą nam refaktoryzować kod.
 
-W programowaniu jak i w życiu warto pamiętać o harcerskiej zasadzie: Zawsze zostawiaj miejsce (biwaku) lepszym niż było. Tak samo w programowaniu, zawsze pozstawiaj kod lepszym niż zastałeś.
+Kiedy będziemy mieli już kod pokryty testami, możemy przejść do
+refaktoryzacji kodu (rozbić duże metody, wyeksportować wspólne kawałki
+kodu, dodać wyraźne granice, ..., oraz przejść do dodawania nowych
+funkcjonalności.
+
+Początek może być trudny, ale następnym razem jeśli my lub ktoś inny
+będzie musiał pracować przy tym kodzie, będzie miał już otestowany kod
+i będzie mógł od razu przejść do pracy nad nim.
+
+
+3\. W programowaniu jak i w życiu warto pamiętać o harcerskiej
+zasadzie: Zawsze zostawiaj miejsce (biwaku) lepszym niż było. Tak samo
+w programowaniu, zawsze pozstawiaj kod lepszym niż zastałeś.
