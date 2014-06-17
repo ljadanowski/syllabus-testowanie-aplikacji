@@ -28,7 +28,8 @@
   - [rspec-expectations](https://github.com/rspec/rspec-expectations)
   - [rspec-mocks](https://github.com/rspec/rspec-mocks)
 4. Michael Feathers.
-   [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
+   [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052):
+  - [CS_CS169.2x Software as a Service, Part 2](https://courses.edx.org/courses/BerkeleyX/CS_CS169.2x/1T2014/courseware/18872bac3b60453bae7c9e00f3660663/)
 
 Język Ruby:
 
