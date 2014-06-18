@@ -28,9 +28,7 @@
    - Główne zasady stosowania doubles.
    - Problemy, nadużycia, ograniczenia.
 6. Praca z *Legacy Code*, czyli
-   z już istniejącym kodem lub kodem nie pokrytym testami (Michael Feathers).
-   - Praca z „zastanym kodem”.
-   - Pokrycie testami.
+   z już istniejącym kodem / kodem nie pokrytym testami.
    - Refaktoryzacja Legacy Code.
 
 
