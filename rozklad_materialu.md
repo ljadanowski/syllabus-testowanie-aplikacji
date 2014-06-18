@@ -18,17 +18,16 @@
 3. Testy jednostkowe, integracyjne.
    - Różnice między testami.
    - Znaczenie testów.
-   - Refaktoryzacja kodu.
-     - Na czym polega refaktoryzacja kodu?
-     - Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
-     - Co to jest samotestujący się kod?
    - Pokrycie kodu testami.
-4. Obiekty *doubles* (*mocks*, *stubs*).
+4. Refaktoryzacja kodu.
+   - Na czym polega refaktoryzacja kodu?
+   - Co to jest *bad smells in code* (w literaturze spotyka się też określenie *smoked code*)?
+5. Obiekty *doubles* (*mocks*, *stubs*).
    - *Fake Objects*.
    - Do czego używamy doubles?
    - Główne zasady stosowania doubles.
    - Problemy, nadużycia, ograniczenia.
-5. Praca z *Legacy Code*, czyli
+6. Praca z *Legacy Code*, czyli
    z już istniejącym kodem lub kodem nie pokrytym testami (Michael Feathers).
    - Praca z „zastanym kodem”.
    - Pokrycie testami.
