@@ -44,6 +44,8 @@ Różne rzeczy:
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
 Testing Puzzles:
 * [Puzzle Node](http://www.puzzlenode.com/)
+Local Euler:
+* [Now with all 476 puzzles and images](http://kmkeen.com/local-euler/)
 Refactoring:
 * [Refactoring Notes](http://ghendry.net/refactor.html)
 
