@@ -39,6 +39,10 @@ Język Ruby:
    [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
 4. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide
 
+Agile Project Management tools:
+
+1. [SonicAgile](https://sonicagile.com/)
+
 Różne rzeczy:
 * Arne Brasseur.
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
