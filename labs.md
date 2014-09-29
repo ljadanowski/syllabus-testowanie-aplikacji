@@ -2,7 +2,10 @@
 
 Podstawowe linki:
 
-* [Ruby Version Manager](http://rvm.io/) – RVM
+* [Ruby Version Manager](http://rvm.io/) – RVM.
+* [Bundler](http://bundler.io/) – provides a consistent environment
+  for Ruby projects by tracking and installing the exact gems and
+  versions that are needed.
 
 Robimy porządki w katalogu domowym:
 
@@ -24,5 +27,6 @@ Robimy porządki w katalogu domowym:
   library. *OpenCV* was built to provide a common infrastructure for
   computer vision applications and to accelerate the use of machine
   perception in the commercial products.
+* [Ruby OpneCV](https://github.com/ruby-opencv/ruby-opencv).
 
 **Zadania:** [Przetłumaczyć na Ruby](labs/01-opencv).
