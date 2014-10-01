@@ -48,14 +48,15 @@ Agile Project Management tools:
 1. [SonicAgile](https://sonicagile.com/)
 
 Różne rzeczy:
+
 * Arne Brasseur.
   [Mutation Testing with Mutant](http://www.sitepoint.com/mutation-testing-mutant/)
-Testing Puzzles:
-* [Puzzle Node](http://www.puzzlenode.com/)
-Local Euler:
-* [Now with all 476 puzzles and images](http://kmkeen.com/local-euler/)
-Refactoring:
-* [Refactoring Notes](http://ghendry.net/refactor.html)
+* Testing Puzzles:
+  [Puzzle Node](http://www.puzzlenode.com/)
+* Local Euler:
+  [Now with all 476 puzzles and images](http://kmkeen.com/local-euler/)
+* Refactoring:
+  [Refactoring Notes](http://ghendry.net/refactor.html)
 
 
 [5]: http://learnxinyminutes.com/docs/ruby/
