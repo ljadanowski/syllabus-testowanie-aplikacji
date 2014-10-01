@@ -2,6 +2,10 @@
 
 ![refactoring](images/refactoring.jpg)
 
+* [Laptop multitasking hinders classroom learning for both users and nearby peers](http://www.sciencedirect.com/science/article/pii/S0360131512002254?np=y)
+
+----
+
 1. Powtórka z języka Ruby.
    - [Learn X in Y minutes][5], where X=Ruby.
    - [Learn X in Ruby], where X=Array,Hash (laboratorium, git)
