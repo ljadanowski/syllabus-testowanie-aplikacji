@@ -17,6 +17,12 @@ Może się przydać:
 * [transfer.sh](https://transfer.sh/) –
   share your files
 
+```sh
+transfer() {
+  curl --upload-file $1 https://transfer.sh/$(basename $1);
+}
+alias transfer=transfer
+```
 
 ### Zaczynamy
 
