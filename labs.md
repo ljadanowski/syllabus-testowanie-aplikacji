@@ -12,6 +12,11 @@ Robimy porządki w katalogu domowym:
 * `quota`
 * `ncdu`
 
+Może się przydać:
+
+* [transfer.sh](https://transfer.sh/) –
+  share your files
+
 
 ### Zaczynamy
 
