@@ -2,7 +2,7 @@
 
 **[9.10.2014]**
 
-1. Zaczynamy: [Laptop multitasking hinders classroom learning for both users and nearby peers](http://www.sciencedirect.com/science/article/pii/S0360131512002254?np=y)
+1. Zaczynamy: [Laptop multitasking hinders classroom learning for both users and nearby peers](http://www.sciencedirect.com/science/article/pii/S0360131512002254?np=y).
 
 ----
 ![refactoring](images/refactoring.jpg)
