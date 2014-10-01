@@ -1,9 +1,11 @@
 ## Testowanie aplikacji w Ruby
 
-![refactoring](images/refactoring.jpg)
+**[9.10.2014]** Zaczynamy:
 
 * [Laptop multitasking hinders classroom learning for both users and nearby peers](http://www.sciencedirect.com/science/article/pii/S0360131512002254?np=y)
 
+----
+![refactoring](images/refactoring.jpg)
 ----
 
 1. Powtórka z języka Ruby.
